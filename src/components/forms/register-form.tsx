@@ -1,7 +1,7 @@
 "use client";
 
 import { usePostSignUp } from "@/app/api/mutation";
-import Traq from "@/components/global/traq";
+import Zarp from "@/components/global/traq";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -75,22 +75,22 @@ export default function RegisterForm() {
   });
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="space-y-1">
+    <div className="max-h-screen lg:px-32 lg:py-12 px-5 py-4 flex flex-col justify-between items-center min-w-full">
+      <Card className="w-full border-none shadow-none gap-16 bg-transparent">
+        <CardHeader className="space-y-1 px-0">
           <div className="flex justify-center mb-4">
-            <Traq color="#121212" />
+            <Zarp color="#121212" />
           </div>
-          <CardTitle className="text-2xl text-center">
+          <CardTitle className="text-5xl text-center font-livret-sans font-normal">
             Create your account
           </CardTitle>
-          <CardDescription className="text-center">
+          <CardDescription className="text-center font-satoshi">
             Enter your information to get started with Traq
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-0">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <FormField
@@ -106,7 +106,7 @@ export default function RegisterForm() {
                             placeholder="John"
                             value={field.value}
                             onChange={field.onChange}
-                            required
+                            className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
                           />
                         </FormControl>
                         <FormMessage />
@@ -128,7 +128,7 @@ export default function RegisterForm() {
                             placeholder="Doe"
                             value={field.value}
                             onChange={field.onChange}
-                            required
+                            className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
                           />
                         </FormControl>
                         <FormMessage />
@@ -151,7 +151,7 @@ export default function RegisterForm() {
                           placeholder="john@example.com"
                           value={field.value}
                           onChange={field.onChange}
-                          required
+                          className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage />
@@ -159,33 +159,58 @@ export default function RegisterForm() {
                   )}
                 />
               </div>
-
-              <div className="space-y-2">
-                <FormField
-                  control={form.control}
-                  name="role"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>LinkedIn URL</FormLabel>
-                      <FormControl>
-                        <Select
-                          onValueChange={field.onChange}
-                          value={field.value}
-                        >
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select role" />
-                            <SelectContent>
-                              <SelectItem value="customer">Customer</SelectItem>
-                              <SelectItem value="vendor">Vendor</SelectItem>
-                              <SelectItem value="admin">Admin</SelectItem>
-                            </SelectContent>
-                          </SelectTrigger>
-                        </Select>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+              <div className="grid grid-cols-4 gap-4">
+                <div className="space-y-2">
+                  <FormField
+                    control={form.control}
+                    name="role"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Role</FormLabel>
+                        <FormControl>
+                          <Select
+                            onValueChange={field.onChange}
+                            value={field.value}
+                          >
+                            <SelectTrigger className="h-12  focus-visible:ring-0 focus-visible:ring-offset-0">
+                              <SelectValue placeholder="Select role" />
+                              <SelectContent>
+                                <SelectItem value="customer">
+                                  Customer
+                                </SelectItem>
+                                <SelectItem value="vendor">Vendor</SelectItem>
+                                <SelectItem value="admin">Admin</SelectItem>
+                              </SelectContent>
+                            </SelectTrigger>
+                          </Select>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="space-y-2 col-span-3">
+                  <FormField
+                    control={form.control}
+                    name="phone_number"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Phone number</FormLabel>
+                        <FormControl>
+                          <Input
+                            id="phone_number"
+                            type="text"
+                            placeholder="08012345678"
+                            value={field.value}
+                            onChange={field.onChange}
+                            className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -202,7 +227,7 @@ export default function RegisterForm() {
                           placeholder="••••••••"
                           value={field.value}
                           onChange={field.onChange}
-                          required
+                          className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage />
@@ -225,29 +250,7 @@ export default function RegisterForm() {
                           placeholder="••••••••"
                           value={field.value}
                           onChange={field.onChange}
-                          required
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <FormField
-                  control={form.control}
-                  name="phone_number"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Phone number</FormLabel>
-                      <FormControl>
-                        <Input
-                          id="phone_number"
-                          type="text"
-                          placeholder="08012345678"
-                          value={field.value}
-                          onChange={field.onChange}
+                          className="h-12 rounded-md focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage />
@@ -278,7 +281,11 @@ export default function RegisterForm() {
                 />
               </div> */}
 
-              <Button type="submit" className="w-full" disabled={isPending}>
+              <Button
+                type="submit"
+                className="w-full h-12 rounded-md mt-4"
+                disabled={isPending}
+              >
                 {isPending ? (
                   <Loader2 className="animate-spin w-4 h-4" />
                 ) : (

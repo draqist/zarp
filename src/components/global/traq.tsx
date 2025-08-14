@@ -1,4 +1,4 @@
-const Traq = ({ color = "traq-black" }: { color?: string }) => {
+const Zarp = ({ color = "traq-black" }: { color?: string }) => {
   return (
     <div className="flex items-center gap-2">
       <svg
@@ -41,4 +41,4 @@ const Traq = ({ color = "traq-black" }: { color?: string }) => {
   );
 };
 
-export default Traq;
+export default Zarp;

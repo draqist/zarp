@@ -1,5 +1,5 @@
-import TraqLogo from "@/components/global/traq-logo";
 import { LoginForm } from "@/components/forms/login-form";
+import ZarpLogo from "@/components/global/traq-logo";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ export default function Login() {
             className="rounded-[36px] object-fill"
           />
           <div className="absolute top-12 left-12 flex gap-5 items-center">
-            <TraqLogo color="#fff" />
+            <ZarpLogo color="#fff" />
             <div className="w-[150px] h-0.25 bg-white rounded-full" />
           </div>
           <div className="absolute bottom-12 left-12 flex flex-col gap-5 items-start w-[381px]">

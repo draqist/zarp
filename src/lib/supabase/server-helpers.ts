@@ -23,13 +23,13 @@ export async function handleOAuthUserData(
         userMetadata?.family_name ||
         userMetadata?.name?.split(" ").slice(1).join(" ") ||
         null,
-      avatar_url: userMetadata?.picture || userMetadata?.avatar_url || null,
-      linkedin_profile: userMetadata?.linkedin_profile || null,
+      role: userMetadata?.role || "customer",
+      phone_number: userMetadata?.phone_number || null,
     };
 
     // First, check if user already exists
     const { data: existingUser, error: checkError } = await supabase
-      .from("users")
+      .from("profiles")
       .select("id, email")
       .eq("id", user.id)
       .single();
@@ -43,7 +43,7 @@ export async function handleOAuthUserData(
     if (existingUser) {
       // User exists, update their data
       const { error: updateError } = await supabase
-        .from("users")
+        .from("profiles")
         .update(userData)
         .eq("id", user.id);
 
@@ -54,7 +54,7 @@ export async function handleOAuthUserData(
     } else {
       // User doesn't exist, insert new user
       const { error: insertError } = await supabase
-        .from("users")
+        .from("profiles")
         .insert(userData);
 
       if (insertError) {
@@ -96,7 +96,7 @@ export async function handleEmailSignupUserData(
 
     // First, check if user already exists
     const { data: existingUser, error: checkError } = await supabase
-      .from("users")
+      .from("profiles")
       .select("id, email")
       .eq("id", user.id)
       .single();
@@ -121,7 +121,7 @@ export async function handleEmailSignupUserData(
     } else {
       // User doesn't exist, insert new user
       const { error: insertError } = await supabase
-        .from("users")
+        .from("profiles")
         .insert(userData);
 
       if (insertError) {

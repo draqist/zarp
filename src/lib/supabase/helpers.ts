@@ -1,5 +1,5 @@
-import { createClient } from "./client";
 import { ErrorToast } from "@/components/global/toasts";
+import { createClient } from "./client";
 
 const supabase = createClient();
 
@@ -20,6 +20,7 @@ export const handleOAuth = async (provider: "google" | "linkedin_oidc") => {
       ErrorToast("Error signing in with OAuth", error.message);
       return;
     }
+    return { data, error };
   } catch (error) {
     ErrorToast("Error signing in with OAuth", error as string);
   }

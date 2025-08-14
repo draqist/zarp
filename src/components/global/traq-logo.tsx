@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-const TraqLogo = ({ color = "#121212" }: { color?: string }) => {
+const ZarpLogo = ({ color = "#121212" }: { color?: string }) => {
   return (
     <div className="flex items-center gap-2">
       <svg
@@ -46,10 +46,10 @@ const TraqLogo = ({ color = "#121212" }: { color?: string }) => {
           color === "#121212" && "text-traq-black"
         )}
       >
-        TRAQ
+        ZARP
       </p>
     </div>
   );
 };
 
-export default TraqLogo;
+export default ZarpLogo;

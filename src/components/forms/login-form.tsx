@@ -19,13 +19,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useAuth } from "@/lib/hooks/use-auth";
 import { authSchema, AuthSchema } from "@/lib/schema/auth-scema";
-import { createClient } from "@/lib/supabase/client";
+import { handleOAuth } from "@/lib/supabase/helpers";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Eye, EyeOff, Linkedin, Loader2 } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -33,10 +33,7 @@ export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const supabase = createClient();
   const [showPassword, setShowPassword] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
   const form = useForm<AuthSchema>({
     resolver: zodResolver(authSchema),
     defaultValues: {
@@ -47,44 +44,16 @@ export function LoginForm({
   });
 
   const { mutateAsync: login, isPending } = usePostLogin();
-
-  const handleOAuth = async (provider: "google" | "linkedin_oidc") => {
-    try {
-      setIsLoading(true);
-      const { data, error } = await supabase.auth.signInWithOAuth({
-        provider,
-        options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
-          queryParams: {
-            access_type: "offline",
-            prompt: "consent",
-          },
-        },
-      });
-
-      if (error) {
-        console.error("Error signing in with OAuth:", error);
-        return;
-      }
-      return data;
-    } catch (error) {
-      console.error("Error signing in with OAuth:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  const { signInWithOAuth, isLoading } = useAuth();
 
   const handleSignInWithOAuth = async (
     provider: "google" | "linkedin_oidc"
   ) => {
-    await handleOAuth(provider);
+    await signInWithOAuth(provider);
     // User data will be automatically inserted in the OAuth callback
   };
   const onSubmit = async (data: AuthSchema) => {
-    const res = await login(data);
-    if (res.data.user) {
-      router.push("/dashboard");
-    }
+    await login(data);
   };
 
   return (
