@@ -42,11 +42,11 @@ const ZarpLogo = ({ color = "#121212" }: { color?: string }) => {
 
       <p
         className={cn(
-          "text-white text-xl font-medium",
+          "text-white text-xl font-medium font-livret-sans",
           color === "#121212" && "text-traq-black"
         )}
       >
-        ZARP
+        Zarp
       </p>
     </div>
   );

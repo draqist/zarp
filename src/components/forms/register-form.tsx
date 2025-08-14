@@ -85,7 +85,10 @@ export default function RegisterForm() {
             Create your account
           </CardTitle>
           <CardDescription className="text-center font-satoshi text-xs lg:text-base">
-            Enter your information to get started with Zarp
+            Enter your information to get started with{" "}
+            <span className="font-normal font-livret-sans text-orange-400">
+              Zarp{" "}
+            </span>
           </CardDescription>
         </CardHeader>
         <CardContent className="px-0">

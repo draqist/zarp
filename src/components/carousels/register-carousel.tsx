@@ -55,9 +55,9 @@ const RegisterCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute bottom-12 right-24 flex items-center gap-x-1">
-        <CarouselPrevious className="bg-gray-100 rounded-full p-2" />
-        <CarouselNext className="bg-gray-100 rounded-full p-2" />
+      <div className="absolute bottom-12 right-24 flex items-center">
+        <CarouselPrevious className="rounded-full p-2 -left-8" />
+        <CarouselNext className="rounded-full p-2" />
       </div>
     </Carousel>
   );

@@ -1,28 +1,6 @@
 "use client";
 
-import { createClient } from "@/lib/supabase/client";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-
 export default function HomePage() {
-  const router = useRouter();
-  const supabase = createClient();
-
-  useEffect(() => {
-    const checkAuth = async () => {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (user) {
-        router.push("/login");
-      } else {
-        router.push("/login");
-      }
-    };
-
-    checkAuth();
-  }, [router, supabase.auth]);
-
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="text-center">

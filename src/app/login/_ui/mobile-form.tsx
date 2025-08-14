@@ -12,6 +12,9 @@ const MobileFormView = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ duration: 1.25, ease: "easeInOut" }}
     >
       <motion.div
         className="px-0 py-6 flex flex-col lg:justify-between items-center min-w-full bg-white rounded-t-3xl"

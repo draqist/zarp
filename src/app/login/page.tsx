@@ -30,10 +30,10 @@ export default function Login() {
                 lineHeight: "72px",
               }}
             >
-              Get Everything You Want
+              Zarp it now!
             </h3>
             <p className="text-white text-base font-normal font-satoshi">
-              The best way to manage your tasks and projects
+              Fast, affordable, deliveries at your fingertips.
             </p>
           </div>
         </div>

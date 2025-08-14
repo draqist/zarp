@@ -1,8 +1,8 @@
-# 📦 ZAP – README
+# 📦 ZARP – README
 
 ## 🚀 Project Overview
 
-The **ZAP** is a proof-of-concept delivery coordination platform designed for the Obafemi Awolowo University campus and its surrounding areas.
+The **ZARP** is a proof-of-concept delivery coordination platform designed for the Obafemi Awolowo University campus and its surrounding areas.
 It aims to **reduce delivery delays, lower costs for vendors, and increase earning opportunities** by onboarding **both private and public transport operators** into a shared logistics network.
 
 Vendors can quickly request deliveries, and transporters whose routes align with the delivery destination can accept and fulfill the order. This creates a **dynamic, decentralized logistics system** without requiring expensive fleet management infrastructure.
