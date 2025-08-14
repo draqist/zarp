@@ -19,6 +19,7 @@ const RegisterCarousel = () => {
         }),
       ]}
       opts={{ loop: true }}
+      className="hidden xl:block"
     >
       <CarouselContent>
         {CAROUSEL_DATA.map((item) => (

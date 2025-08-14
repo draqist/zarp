@@ -81,11 +81,11 @@ export default function RegisterForm() {
           <div className="flex justify-center mb-4">
             <Zarp color="#121212" />
           </div>
-          <CardTitle className="text-5xl text-center font-livret-sans font-normal">
+          <CardTitle className="text-3xl lg:text-5xl text-center font-livret-sans font-normal">
             Create your account
           </CardTitle>
-          <CardDescription className="text-center font-satoshi">
-            Enter your information to get started with Traq
+          <CardDescription className="text-center font-satoshi text-xs lg:text-base">
+            Enter your information to get started with Zarp
           </CardDescription>
         </CardHeader>
         <CardContent className="px-0">
@@ -159,7 +159,7 @@ export default function RegisterForm() {
                   )}
                 />
               </div>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
                 <div className="space-y-2">
                   <FormField
                     control={form.control}
@@ -179,7 +179,6 @@ export default function RegisterForm() {
                                   Customer
                                 </SelectItem>
                                 <SelectItem value="vendor">Vendor</SelectItem>
-                                <SelectItem value="admin">Admin</SelectItem>
                               </SelectContent>
                             </SelectTrigger>
                           </Select>
@@ -189,7 +188,7 @@ export default function RegisterForm() {
                     )}
                   />
                 </div>
-                <div className="space-y-2 col-span-3">
+                <div className="space-y-2 col-span-2 lg:col-span-3">
                   <FormField
                     control={form.control}
                     name="phone_number"

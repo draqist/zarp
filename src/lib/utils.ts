@@ -23,8 +23,7 @@ export const CAROUSEL_DATA = [
   {
     id: 3,
     title: "Deliveries, Simplified.",
-    description:
-      "Effortless transportation made easy with smart solutions",
+    description: "Effortless transportation made easy with smart solutions",
     image: "/jeremy-bishop-0FW6K87lP1U-unsplash.jpg",
   },
 ];
