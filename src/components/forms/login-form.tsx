@@ -46,7 +46,7 @@ export function LoginForm({
     },
   });
 
-  const { mutateAsync: login } = usePostLogin();
+  const { mutateAsync: login, isPending } = usePostLogin();
 
   const handleOAuth = async (provider: "google" | "linkedin_oidc") => {
     try {
@@ -248,9 +248,9 @@ export function LoginForm({
                   <Button
                     type="submit"
                     className="w-full h-12 rounded-[12px]"
-                    disabled={isLoading}
+                    disabled={isPending}
                   >
-                    {isLoading ? (
+                    {isPending ? (
                       <Loader2 className="w-4 h-4 animate-spin" />
                     ) : (
                       "Sign in"

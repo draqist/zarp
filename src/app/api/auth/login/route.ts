@@ -29,11 +29,14 @@ export async function POST(req: Request) {
   if (checkError && checkError.code !== "PGRST116") {
     // PGRST116 = no rows returned
     console.error("Error checking existing user:", checkError);
-    return {
-      success: false,
-      error: checkError,
-      message: "User check failed",
-    };
+    return NextResponse.json(
+      {
+        success: false,
+        error: checkError,
+        message: "User check failed",
+      },
+      { status: 500 }
+    );
   }
 
   if (existingUser) {

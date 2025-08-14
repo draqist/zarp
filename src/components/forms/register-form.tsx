@@ -17,7 +17,7 @@ import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
-import { toast } from "sonner";
+import { ErrorToast, SuccessToast } from "../global/toasts";
 import {
   Form,
   FormControl,
@@ -41,15 +41,22 @@ export default function RegisterForm() {
   const onSubmit = async (data: SignUpSchemaType) => {
     try {
       await signUp(data);
-      toast.success(
-        "Account created successfully! Please check your email to verify your account."
+      SuccessToast(
+        "Account created successfully!",
+        "Please check your email to verify your account."
       );
       router.push("/login");
     } catch (error) {
       if (error instanceof Error) {
-        toast.error(error.message);
+        ErrorToast(
+          "An unexpected error occurred",
+          error.message || "An unexpected error occurred"
+        );
       } else {
-        toast.error("An unexpected error occurred");
+        ErrorToast(
+          "An unexpected error occurred",
+          "An unexpected error occurred"
+        );
       }
     }
   };

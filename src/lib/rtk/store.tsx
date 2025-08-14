@@ -1,16 +1,12 @@
-import authReducer from "./slices/authSlice";
-import jobsReducer from "./slices/jobsSlice";
-import uiReducer from "./slices/uiSlice";
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 import { createLogger } from "redux-logger";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import authReducer from "./slices/authSlice";
 
 const reducer = combineReducers({
   auth: authReducer,
-  ui: uiReducer,
-  jobs: jobsReducer,
 });
 
 const persistConfig = {
