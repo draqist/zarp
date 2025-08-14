@@ -27,3 +27,21 @@ export const CAROUSEL_DATA = [
     image: "/jeremy-bishop-0FW6K87lP1U-unsplash.jpg",
   },
 ];
+
+export const HOME_NAVBAR_LINKS = [
+  {
+    title: "Zarp",
+    link: "/",
+  },
+  {
+    title: "Customers",
+    link: "/customers"
+  },
+  {
+    title: "Vendors",
+    link: "/vendors"
+  },
+  {
+    title: "Riders",
+  }
+]
