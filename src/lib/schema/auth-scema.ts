@@ -10,7 +10,7 @@ export const authSchema = z.object({
 
 export type AuthSchema = z.infer<typeof authSchema>;
 
-export const SignUpSchema = z.object({
+export const signUpSchema = z.object({
   first_name: z.string().min(1, { message: "First name is required" }),
   last_name: z.string().min(1, { message: "Last name is required" }),
   email: z.email({ message: "Invalid email address" }),
@@ -20,13 +20,8 @@ export const SignUpSchema = z.object({
   confirm_password: z
     .string()
     .min(8, { message: "Password must be at least 8 characters" }),
-  linkedin_url: z.url({
-    // protocol: /^https?$/,
-    hostname: /^www\.linkedin\.com$/,
-    message: "Invalid LinkedIn URL",
-  }),
-  resume_url: z.string().optional(),
-  avatar_url: z.string().optional(),
+  role: z.enum(["customer", "vendor", "admin"]),
+  phone_number: z.string().min(7, { message: "Invalid phone number" }),
 });
 
-export type SignUpSchema = z.infer<typeof SignUpSchema>;
+export type SignUpSchemaType = z.infer<typeof signUpSchema>;

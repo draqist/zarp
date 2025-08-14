@@ -1,6 +1,5 @@
 "use client";
 
-import { useAuth } from "@/lib/hooks/use-auth";
 import { persistor, store } from "@/lib/rtk/store";
 import {
   MutationCache,
@@ -10,11 +9,6 @@ import {
 } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-
-function AuthProvider({ children }: { children: React.ReactNode }) {
-  useAuth(); // This will handle user data insertion after login
-  return <>{children}</>;
-}
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const queryClient = new QueryClient({
@@ -41,7 +35,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <QueryClientProvider client={queryClient}>
-          <AuthProvider>{children}</AuthProvider>
+          {children}
         </QueryClientProvider>
       </PersistGate>
     </Provider>

@@ -28,22 +28,22 @@ const notoSerif = Noto_Serif({
 const satoshi = localFont({
   src: [
     {
-      path: "./lib/fonts/Satoshi-Light.woff2",
+      path: "./fonts/Satoshi-Light.woff2",
       weight: "300",
       style: "light",
     },
     {
-      path: "./lib/fonts/Satoshi-Regular.woff2",
+      path: "./fonts/Satoshi-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./lib/fonts/Satoshi-Medium.woff2",
+      path: "./fonts/Satoshi-Medium.woff2",
       weight: "500",
       style: "medium",
     },
     {
-      path: "./lib/fonts/Satoshi-Bold.woff2",
+      path: "./fonts/Satoshi-Bold.woff2",
       weight: "700",
       style: "bold",
     },
@@ -54,12 +54,12 @@ const satoshi = localFont({
 const livretSans = localFont({
   src: [
     {
-      path: "./lib/fonts/LivretDisplayRegular.ttf",
+      path: "./fonts/LivretDisplayRegular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./lib/fonts/LivretDisplayMedium.ttf",
+      path: "./fonts/LivretDisplayMedium.ttf",
       weight: "500",
       style: "normal",
     },
