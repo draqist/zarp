@@ -35,13 +35,13 @@ export const HOME_NAVBAR_LINKS = [
   },
   {
     title: "Customers",
-    link: "/customers"
+    link: "/customers",
   },
   {
     title: "Vendors",
-    link: "/vendors"
+    link: "/vendors",
   },
   {
     title: "Riders",
-  }
-]
+  },
+];
