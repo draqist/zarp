@@ -46,7 +46,7 @@ const RegisterCarousel = () => {
                   >
                     {item.title}
                   </h3>
-                  <p className="text-white text-base font-normal font-satoshi">
+                  <p className="text-white text-base font-normal ">
                     {item.description}
                   </p>
                 </div>

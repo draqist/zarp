@@ -101,7 +101,7 @@ export default function MobileRegisterForm() {
             <CardTitle className="text-3xl lg:text-5xl text-center font-livret-sans font-normal">
               Create your account
             </CardTitle>
-            <CardDescription className="text-center font-satoshi text-xs lg:text-base">
+            <CardDescription className="text-center text-xs lg:text-base">
               Enter your information to get started with{" "}
               <span className="font-medium font-livret-sans text-orange-400">
                 {" "}

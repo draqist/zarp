@@ -32,7 +32,7 @@ export default function Login() {
             >
               Zarp it now!
             </h3>
-            <p className="text-white text-base font-normal font-satoshi">
+            <p className="text-white text-base font-normal">
               Fast, affordable, deliveries at your fingertips.
             </p>
           </div>

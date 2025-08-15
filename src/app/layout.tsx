@@ -68,9 +68,9 @@ const livretSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Traq",
+  title: "Zarp",
   description:
-    "Traq is a job aggregator and tracker, that helps you find, track, and apply for jobs efficiently. It aggregates job listings (via scraping or API), generates AI-powered cover letters, and tracks your job applications — all in one place.",
+    "Zarp is a campus-first delivery network that uses rides already on the road (bikes, cars, buses) to move your food and small packages faster and cheaper. Think of it as carpooling for packages: we match what needs to be delivered with people already heading in that direction.",
 };
 
 export default function RootLayout({
@@ -81,7 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} ${livretSans.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
+        className={`${livretSans.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
       >
         <Providers>
           {children}
