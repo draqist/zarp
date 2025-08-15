@@ -19,12 +19,12 @@ const RegisterCarousel = () => {
         }),
       ]}
       opts={{ loop: true }}
-      className="hidden xl:block"
+      className="hidden lg:block"
     >
       <CarouselContent>
         {CAROUSEL_DATA.map((item) => (
           <CarouselItem key={item.id} className="w-full min-h-screen">
-            <div className="invisible xl:visible xl:p-2 relative h-full">
+            <div className="invisible lg:visible lg:p-2 relative h-full">
               <div className="relative h-full w-full rounded-lg">
                 <Image
                   src={item.image}

@@ -93,7 +93,7 @@ export default function MobileRegisterForm() {
         animate={{ y: 0 }}
         transition={{ ease: "anticipate", duration: 2.5 }}
       >
-        <Card className="w-full shadow-none gap-16 rounded-t-3xl rounded-b-none border border-white bg-white px-4 lg:px-0">
+        <Card className="w-full shadow-none gap-10 rounded-t-3xl rounded-b-none border border-white bg-white px-4 lg:px-0">
           <CardHeader className="space-y-1 px-0">
             <div className="flex justify-center mb-4">
               <Zarp color="#121212" />

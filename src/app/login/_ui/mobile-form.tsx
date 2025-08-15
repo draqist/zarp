@@ -6,7 +6,7 @@ import Link from "next/link";
 const MobileFormView = () => {
   return (
     <motion.div
-      className="min-h-screen flex flex-col justify-end"
+      className="h-full flex flex-col justify-end overflow-hidden"
       style={{
         backgroundImage: "url('/Fluid_Pink_Blue_Wallpaper_8k_10.png')",
         backgroundSize: "cover",

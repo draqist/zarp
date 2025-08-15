@@ -60,14 +60,14 @@ export function LoginForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="border-none shadow-none">
         <CardHeader className="flex flex-col gap-3 items-center">
-          <CardTitle className="text-traq-black text-5xl font-medium font-livret-sans">
+          <CardTitle className="text-traq-black text-4xl lg:text-5xl font-medium font-livret-sans">
             Welcome Back
           </CardTitle>
-          <CardDescription>
+          <CardDescription className="text-center">
             Enter your email and password to access your account
           </CardDescription>
         </CardHeader>
-        <CardContent className="mt-12">
+        <CardContent className="mt-2 lg:mt-12">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-6">

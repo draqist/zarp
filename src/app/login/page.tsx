@@ -9,8 +9,8 @@ import MobileFormView from "./_ui/mobile-form";
 export default function Login() {
   const isMobile = useIsMobile();
   return (
-    <div className="bg-white min-h-screen grid grid-cols-1 lg:grid-cols-2">
-      <div className="invisible xl:visible xl:p-2 relative">
+    <div className="bg-white max-h-screen grid grid-cols-1 lg:grid-cols-2">
+      <div className="hidden lg:block lg:p-2 relative">
         <div className="relative h-full w-full rounded-lg">
           <Image
             src="/Fluid_Pink_Blue_Wallpaper_8k_10.png"
@@ -39,7 +39,9 @@ export default function Login() {
         </div>
       </div>
       {isMobile ? (
-        <MobileFormView />
+        <main className="h-screen">
+          <MobileFormView />
+        </main>
       ) : (
         <div className="lg:px-36 lg:py-12 px-2 py-4 flex flex-col justify-between items-center min-w-full">
           <div className="w-full flex justify-center items-center">
