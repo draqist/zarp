@@ -1,19 +1,20 @@
 import { Menu } from "lucide-react";
-import Link from "next/link";
-import Zarp from "./traq";
+import ZarpLogo from "./traq-logo";
+import { ZarpNavigation } from "./zarp-nav";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between absolute right-0 left-0 px-6 py-5">
-      <Zarp color="orange" />
+    <div className="flex items-center justify-between fixed right-0 left-0 z-10 p-5 font-inter">
+      <ZarpLogo color="#121212" className="text-[#121212]" />
 
-      <div className="hidden lg:flex h-12 justify-between items-center rounded-full p-2 px-3 gap-x-20 navbar-container">
+      {/* <div className="hidden lg:flex justify-between items-center gap-x-20">
         <Link href="/customers"> Customers </Link>
         <Link href="/customers"> Customers </Link>
         <Link href="/customers"> Customers </Link>
         <Link href="/customers"> Customers </Link>
-      </div>
-      <Menu size={20} />
+      </div> */}
+      <ZarpNavigation />
+      <Menu size={20} className="" />
     </div>
   );
 };

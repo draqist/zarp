@@ -1,12 +1,11 @@
-import Hero from "@/components/global/hero";
 import Navbar from "@/components/global/navbar";
 import { ReactNode } from "react";
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="min-h-screen bg-[#F3F3F3]">
+    <div className="min-h-screen bg-[#FFFEFE]">
       <Navbar />
-      <Hero />
+      <div className="top-16">{children}</div>
     </div>
   );
 };

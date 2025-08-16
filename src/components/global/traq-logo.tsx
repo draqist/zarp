@@ -1,6 +1,12 @@
 import { cn } from "@/lib/utils";
 
-const ZarpLogo = ({ color = "#121212" }: { color?: string }) => {
+const ZarpLogo = ({
+  color,
+  className,
+}: {
+  color?: string;
+  className?: string;
+}) => {
   return (
     <div className="flex items-center gap-2">
       <svg
@@ -43,7 +49,7 @@ const ZarpLogo = ({ color = "#121212" }: { color?: string }) => {
       <p
         className={cn(
           "text-white text-xl font-medium font-livret-sans",
-          color === "#121212" && "text-traq-black"
+          className
         )}
       >
         Zarp
