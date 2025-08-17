@@ -67,6 +67,17 @@ const livretSans = localFont({
   variable: "--font-livret-sans",
 });
 
+const rhithmic = localFont({
+  src: [
+    {
+      path: "./fonts/rhitmic.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  variable: "--font-rhithmic",
+});
+
 export const metadata: Metadata = {
   title: "Zarp",
   description:
@@ -81,7 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${livretSans.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
+        className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
       >
         <Providers>
           {children}

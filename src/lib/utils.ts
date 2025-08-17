@@ -1,4 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
+import { Home } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -43,5 +44,38 @@ export const HOME_NAVBAR_LINKS = [
   },
   {
     title: "Riders",
+  },
+];
+
+export const FOOTER_LINKS = [
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
+  },
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
+  },
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
+  },
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
+  },
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
+  },
+  {
+    href: "/",
+    title: "Home",
+    icon: Home,
   },
 ];

@@ -4,7 +4,7 @@ import { ZarpNavigation } from "./zarp-nav";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between fixed right-0 left-0 z-10 p-5 font-inter">
+    <div className="flex items-center justify-between fixed bg-zarp right-0 left-0 z-10 p-5 font-inter">
       <ZarpLogo color="#121212" className="text-[#121212]" />
 
       {/* <div className="hidden lg:flex justify-between items-center gap-x-20">

@@ -52,7 +52,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function ZarpNavigation() {
   return (
-    <NavigationMenu viewport={false}>
+    <NavigationMenu viewport={false} className="hidden lg:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">

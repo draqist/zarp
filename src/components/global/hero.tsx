@@ -1,28 +1,79 @@
 const Hero = () => {
   return (
-    <section className="px-5 h-screen relative pt-5 top-16">
+    <section className="px-5 h-[calc(100vh-64px)] relative pt-5 flex flex-col gap-6">
+      {/* Hero background */}
       <div
         className="max-h-screen h-8/12 relative rounded-md"
         style={{
           backgroundImage: "url('/kai-pilger-tL92LY152Sk-unsplash.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // opacity: 0.65
         }}
       >
-        {/* <div className="w-full absolute right-0 left-0 top-0 bottom-0 bg-black/70 z-10 opacity-25" /> */}
         <div className="absolute left-12 bottom-12">
           <h1 className="text-7xl text-white">
             <span className="font-livret-sans">Zarp </span> it, Get it there,
             Fast.
-            {/* Experience deliveries like never before with{" "} */}
           </h1>
-          <p className="text-white text-xl">
+          <p className="text-white text-xl mt-2">
             The fastest way to send, receive, and deliver goods — whether you’re
             a vendor, a zapper, or the zapped.
           </p>
         </div>
       </div>
+
+      {/* Feature grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-8 lg:pb-0">
+        <div className="bg-platinum/50 rounded-3xl p-8">
+          <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
+            Deliver <span className="text-orange-600">anything</span>, anytime!
+          </h4>
+          <p className="text-black text-sm leading-relaxed">
+            From food to fashion, Zap makes it easy for vendors and individuals
+            to send items across town in just a few clicks.
+          </p>
+        </div>
+
+        <div className="bg-platinum/50 rounded-3xl p-8">
+          <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
+            Earn as a <span className="text-orange-600">Zapper</span>.
+          </h4>
+          <p className="text-black text-sm leading-relaxed">
+            Become part of a growing network of delivery partners, set your
+            schedule, and earn on every completed trip.
+          </p>
+        </div>
+
+        <div className="bg-platinum/50 rounded-3xl p-8">
+          <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
+            Track every <span className="text-orange-600">Zap</span>.
+          </h4>
+          <p className="text-black text-sm leading-relaxed">
+            Enjoy real-time tracking and instant notifications so both senders
+            and receivers always know where their package is.
+          </p>
+        </div>
+      </div>
+
+      {/* Marquee strip */}
+      {/* <div className="overflow-hidden whitespace-nowrap border-y-[1px] border-gray-400/35 text-black py-1">
+        <div className="animate-marquee">
+          <Button variant="link">Fast Deliveries</Button>
+          <Button variant="link" className="w-full">
+            Fast Deliveries
+          </Button>
+          <Button
+            variant="secondary"
+            className="rounded-full bg-orange-300 text-white hover:bg-amber-600"
+          >
+            {" "}
+            Get Started{" "}
+          </Button>
+          <Button variant="link" className="w-full">
+            Fast Deliveries
+          </Button>
+        </div>
+      </div> */}
     </section>
   );
 };
