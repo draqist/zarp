@@ -49,6 +49,8 @@
   --color-zarp: var(--zarp);
   --color-platinum: var(--platinum);
   --color-abyss: var(--abyss);
+  --color-camo: var(--camo);
+  --color-lemon: var(--lemon);
 }
 
 :root {
@@ -87,6 +89,8 @@
   --zarp: rgb(255, 254, 254);
   --platinum: hsla(43, 16%, 91%);
   --abyss: hsl(0, 0%, 5%);
+  --camo: hsl(108, 5%, 20%);
+  --lemon: hsl(75, 89%, 71%);
 }
 
 .dark {
@@ -124,6 +128,8 @@
   --zarp: rgb(255, 254, 254);
   --platinum: hsla(43, 16%, 91%);
   --abyss: hsl(0, 0%, 5%);
+  --camo: hsl(108, 5%, 20%);
+  --lemon: hsl(75, 89%, 71%);
 }
 
 @layer base {
@@ -155,5 +161,9 @@
   .scrollbar-hide {
     scrollbar-width: none;
     -ms-overflow-style: none;
+  }
+  .marquee-item {
+    flex: 0 0 auto;
+    padding: 0 2rem;
   }
 }

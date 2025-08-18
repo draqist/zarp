@@ -1,11 +1,13 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
 import { NavigationMenuLink } from "@radix-ui/react-navigation-menu";
 import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollToPlugin);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(useGSAP);
+}
 
 type ListItemProps = {
   title: string;

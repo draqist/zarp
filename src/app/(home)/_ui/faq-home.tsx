@@ -8,24 +8,25 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion";
-import { Button } from "../ui/button";
+} from "../../../components/ui/accordion";
+import { Button } from "../../../components/ui/button";
 
 gsap.registerPlugin(ScrollToPlugin);
 
 const HomeFaq = () => {
   return (
-    <section className="px-5 flex flex-col gap-3 lg:gap-6" id="faq">
-      <h1 className="text-lg lg:text-4xl font-rhithmic text-abyss font-medium tracking-tighter">
-        Frequently Asked Questions (FAQs)
-      </h1>
+    <section className="px-5 flex flex-col gap-3 lg:gap-4" id="faq">
+      <div className="grid grid-cols-1 border-t border-gray-400/35 pt-4">
+        <h1 className="text-lg lg:text-4xl font-rhithmic text-abyss font-medium tracking-tighter">
+          Frequently Asked Questions
+        </h1>
+        {/* <h1 className="text-lg lg:text-4xl font-rhithmic text-abyss font-medium tracking-tighter col-span-3 text-right">
+          FAQ — Answers
+        </h1> */}
+      </div>
       <FAQItems />
       <MobileFAQItems />
     </section>
-    // <section className="w-full grid grid-cols-5 gap-6 border-platinum/50 p-4">
-    //   <div className="flex flex-col"></div>
-    //   <div className="col-span-3"></div>
-    // </section>
   );
 };
 

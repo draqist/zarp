@@ -9,7 +9,7 @@ import MobileFormView from "./_ui/mobile-form";
 export default function Login() {
   const isMobile = useIsMobile();
   return (
-    <div className="bg-white max-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <div className="bg-white h-screen grid grid-cols-1 lg:grid-cols-2">
       <div className="hidden lg:block lg:p-2 relative">
         <div className="relative h-full w-full rounded-lg">
           <Image

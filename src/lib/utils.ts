@@ -1,5 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
-import { Home } from "lucide-react";
+import { Home, Rocket, SearchCheck, Smartphone, Users } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -80,64 +80,6 @@ export const FOOTER_LINKS = [
   },
 ];
 
-// export const FAQS = [
-//   {
-//     id: 1,
-//     question: "What exactly is Zarp and how does it work?",
-//     answer:
-//       "Zarp is a platform designed to simplify and accelerate the way people exchange goods, services, and support. It brings together three groups: vendors who provide products or services, zarpers who facilitate and ensure smooth transactions, and the zarped who are the end recipients. By combining these roles in a single ecosystem, Zarp ensures transparency, accountability, and speed in every interaction. Whether you're selling, mediating, or receiving, the platform provides tools to track activities, manage trust, and maintain a seamless flow from start to finish.",
-//     mobile_answer: "Zap is a logistics platform connecting vendors, zappers (delivery partners), and customers (zapees). Vendors list items, zappers deliver, and zapees track orders in real-time."
-//   },
-//   {
-//     id: 2,
-//     question: "Who can become a vendor on Zarp?",
-//     answer:
-//       "Any individual or business with something to offer can register as a vendor on Zarp. Vendors can list their services, products, or even specialized skills. The platform is built to support both small-scale providers (like freelancers and local businesses) and larger entities (like established companies or organizations). Zarp provides vendors with exposure to a broader audience and tools to manage their offerings, track demand, and build credibility through verified interactions.",
-//     mobile_answer: "Anyone with valid ID, transport, and a smartphone can become a zapper. Work flexibly, earn per delivery, and join after quick verification."
-//   },
-//   {
-//     id: 3,
-//     question: "What is a 'zarper' and why do they matter?",
-//     answer:
-//       "A zarper is the trusted bridge within the Zarp ecosystem. They are the ones who facilitate transactions, validate processes, and ensure that agreements between vendors and the zarped are fulfilled properly. Think of zarpers as reliable middlemen who reduce the risk of misunderstandings or failed commitments. By ensuring things are done as promised, zarpers make the platform more trustworthy for everyone involved. Anyone who enjoys connecting people and has a reputation for reliability can step into this role.",
-//     mobile_answer: "Zap ensures safety with verified zappers, real-time tracking, insurance, and ratings to build trust for vendors, zappers, and zapees."
-//   },
-//   {
-//     id: 4,
-//     question: "I’m new to Zarp — do I need to choose a role right away?",
-//     answer:
-//       "No, you don’t. Zarp is built to be flexible. While many users gravitate naturally towards a role — as a vendor, zarper, or zarped — you can fluidly move between them depending on what you need at the moment. For example, you could offer a service as a vendor in one transaction, then act as a zarper in another, and later be the zarped when you need something delivered or supported. The platform is designed so your account supports multiple roles without requiring separate registrations.",
-//   },
-//   {
-//     id: 5,
-//     question: "How does Zarp ensure safety and trust in transactions?",
-//     answer:
-//       "Trust is at the heart of Zarp. The platform uses multiple layers of verification, reputation scoring, and secure workflows to ensure safety. Vendors build credibility through verified services and customer feedback, zarpers maintain trust by successfully facilitating transactions, and the zarped can rely on transparent tracking of the entire process. Additionally, Zarp incorporates secure payments, dispute resolution mechanisms, and clear terms of service to protect all parties involved.",
-//     mobile_answer: "Zap shows delivery fees upfront. Vendors can pay per order or via subscription, and zappers earn per delivery minus a small service fee."
-//   },
-//   {
-//     id: 6,
-//     question: "Do I have to pay to use Zarp?",
-//     answer:
-//       "Zarp is free to join and explore. Depending on your role, certain premium features may come with small service fees. For example, vendors may pay for enhanced visibility or premium listing options, zarpers could earn commissions on facilitation, and the zarped may have optional insurance or priority services available. These fees are designed to keep the platform sustainable while ensuring maximum value for every role without hidden costs.",
-//     mobile_answer: "Zap stands out by creating a full ecosystem: vendors manage orders easily, zappers earn flexibly, and zapees enjoy fast, transparent deliveries."
-//   },
-//   {
-//     id: 7,
-//     question: "Can I use Zarp outside my local area?",
-//     answer:
-//       "Absolutely. Zarp is designed to be both local and global. While many interactions may happen within your immediate area (for example, local vendors or nearby zarpers), the platform also supports remote services and global exchanges where applicable. If you’re a freelancer, consultant, or digital vendor, your reach extends far beyond your neighborhood. The platform is being actively scaled to support cross-border participation where possible.",
-//     mobile_answer: "Vendors use Zap to deliver without managing drivers. They gain fast deliveries, customer insights, and increased reach."
-//   },
-//   {
-//     id: 8,
-//     question:
-//       "What makes Zarp different from traditional marketplaces or delivery apps?",
-//     answer:
-//       "Most platforms focus only on a single dimension — like connecting buyers with sellers or delivering items from point A to point B. Zarp redefines the ecosystem by introducing the third role: the zarper. This creates a unique triangular model where vendors, facilitators, and recipients coexist, ensuring checks and balances throughout the process. The result is a more reliable, human-centered, and versatile platform that adapts to multiple industries, from retail and logistics to services and community-based exchanges.",
-//   },
-// ];
-
 export const FAQS = [
   {
     id: 1,
@@ -194,5 +136,43 @@ export const FAQS = [
       "Yes! Real-time delivery tracking is a core feature of Zarp. From the moment your order is picked up to when it arrives at your doorstep, you’ll see every step in the app. Notifications keep you updated, and you’ll always know the estimated time of arrival. This feature builds confidence for zarpees and accountability for zarpers, ensuring smooth logistics every time.",
     mobile_answer:
       "Yes, Zarp lets you track deliveries in real time with notifications and live ETAs for peace of mind.",
+  },
+];
+
+export const ZARP_VALUES = [
+  {
+    id: 1,
+    icon: Rocket, // lucide-react icon name
+    title: "Speed That Matters",
+    description:
+      "Get your items delivered quickly with Zarp’s optimized routes and reliable zappers. No more delays or excuses — just fast, efficient deliveries.",
+  },
+  {
+    id: 2,
+    icon: Smartphone,
+    title: "Seamless Experience",
+    description:
+      "Whether you’re a vendor, a zapper, or the recipient, Zarp makes logistics simple with one unified platform. Track orders, manage pickups, and stay updated in real-time.",
+  },
+  {
+    id: 3,
+    icon: SearchCheck,
+    title: "Trust & Transparency",
+    description:
+      "Know exactly where your package is, who’s handling it, and when it will arrive. Full visibility, no hidden fees, no surprises.",
+  },
+  // {
+  //   id: 4,
+  //   icon: "Store",
+  //   title: "Empowering Local Businesses",
+  //   description:
+  //     "Vendors grow faster with reliable logistics built to scale their operations. Your success is powered by smooth deliveries.",
+  // },
+  {
+    id: 4,
+    icon: Users,
+    title: "Community of Zappers",
+    description:
+      "Logistics isn’t faceless — Zarp connects you with real, vetted individuals who make things happen. Join a trusted network built on reliability.",
   },
 ];

@@ -1,13 +1,20 @@
 "use client";
 
-import HomeFaq from "@/components/global/faq-home";
+import HomeFaq from "@/app/(home)/_ui/faq-home";
+import Hero from "@/app/(home)/_ui/hero";
 import Footer from "@/components/global/footer";
-import Hero from "@/components/global/hero";
+import PartnersAndSupporters from "./_ui/partners";
+import WhyChooseZarp from "./_ui/reasons";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#FFFEFE] flex flex-col gap-8">
+    <div
+      className="min-h-screen bg-[#FFFEFE] flex flex-col gap-6"
+      id="smooth-content"
+    >
       <Hero />
+      <WhyChooseZarp />
+      <PartnersAndSupporters />
       <HomeFaq />
       <Footer />
     </div>

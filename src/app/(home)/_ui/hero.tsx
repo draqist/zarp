@@ -10,12 +10,12 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute left-12 bottom-12">
-          <h1 className="text-7xl text-white">
-            <span className="font-livret-sans">Zarp </span> it, Get it there,
+        <div className="absolute left-4 bottom-4 right-4  lg:left-12 lg:bottom-12">
+          <h1 className="text-2xl lg:text-7xl text-white">
+            <span className="font-livret-sans">Zarp </span> it — Get it there,
             Fast.
           </h1>
-          <p className="text-white text-xl mt-2">
+          <p className="text-white text-xs lg:text-xl lg:mt-2">
             The fastest way to send, receive, and deliver goods — whether you’re
             a vendor, a zapper, or the zapped.
           </p>
@@ -24,9 +24,9 @@ const Hero = () => {
 
       {/* Feature grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pb-8 lg:pb-0">
-        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
+        <div className="bg-platinum/50 rounded-xl p-4 lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
-            Deliver <span className="text-orange-600">anything</span>, anytime!
+            Deliver <span className="text-orange-500">anything</span>, anytime!
           </h4>
           <p className="text-black text-sm leading-relaxed">
             From food to fashion, Zap makes it easy for vendors and individuals
@@ -34,9 +34,9 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
+        <div className="bg-platinum/50 rounded-xl p-4 lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
-            Earn as a <span className="text-orange-600">Zapper</span>.
+            Earn as a <span className="text-orange-500">Zapper</span>.
           </h4>
           <p className="text-black text-sm leading-relaxed">
             Become part of a growing network of delivery partners, set your
@@ -44,9 +44,9 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
+        <div className="bg-platinum/50 rounded-xl p-4 lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
-            Track every <span className="text-orange-600">Zap</span>.
+            Track every <span className="text-orange-500">Zap</span>.
           </h4>
           <p className="text-black text-sm leading-relaxed">
             Enjoy real-time tracking and instant notifications so both senders
@@ -64,7 +64,7 @@ const Hero = () => {
           </Button>
           <Button
             variant="secondary"
-            className="rounded-full bg-orange-300 text-white hover:bg-amber-600"
+            className="rounded-full bg-orange-300 text-white hover:bg-amber-500"
           >
             {" "}
             Get Started{" "}
