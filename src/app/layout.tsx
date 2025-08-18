@@ -95,7 +95,7 @@ export default function RootLayout({
         className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
       >
         <Providers>
-          {children}
+          <div id="smooth-wrapper">{children}</div>
           <Toaster />
         </Providers>
       </body>

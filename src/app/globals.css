@@ -149,4 +149,11 @@
     padding-left: 100%;
     animation: marquee 15s linear infinite;
   }
+  .scrollbar-hide ::-webkit-scrollbar-track {
+    display: hidden;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }

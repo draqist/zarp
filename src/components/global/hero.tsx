@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="px-5 h-[calc(100vh-64px)] relative pt-5 flex flex-col gap-6">
       {/* Hero background */}
       <div
-        className="max-h-screen h-8/12 relative rounded-md"
+        className="max-h-screen h-9/12 relative rounded-md"
         style={{
           backgroundImage: "url('/kai-pilger-tL92LY152Sk-unsplash.jpg')",
           backgroundSize: "cover",
@@ -23,8 +23,8 @@ const Hero = () => {
       </div>
 
       {/* Feature grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-8 lg:pb-0">
-        <div className="bg-platinum/50 rounded-3xl p-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pb-8 lg:pb-0">
+        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
             Deliver <span className="text-orange-600">anything</span>, anytime!
           </h4>
@@ -34,7 +34,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-platinum/50 rounded-3xl p-8">
+        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
             Earn as a <span className="text-orange-600">Zapper</span>.
           </h4>
@@ -44,7 +44,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-platinum/50 rounded-3xl p-8">
+        <div className="bg-platinum/50 rounded-xl p-4 text-justify lg:p-8">
           <h4 className="text-black text-xl md:text-2xl mb-6 font-rhithmic tracking-tighter">
             Track every <span className="text-orange-600">Zap</span>.
           </h4>

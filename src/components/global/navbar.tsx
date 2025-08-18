@@ -1,20 +1,24 @@
-import { Menu } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
+import Link from "next/link";
 import ZarpLogo from "./traq-logo";
 import { ZarpNavigation } from "./zarp-nav";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between fixed bg-zarp right-0 left-0 z-10 p-5 font-inter">
+    <div className="flex items-center justify-between fixed bg-zarp right-0 left-0 z-10 p-5 font-inter h-16">
       <ZarpLogo color="#121212" className="text-[#121212]" />
-
-      {/* <div className="hidden lg:flex justify-between items-center gap-x-20">
-        <Link href="/customers"> Customers </Link>
-        <Link href="/customers"> Customers </Link>
-        <Link href="/customers"> Customers </Link>
-        <Link href="/customers"> Customers </Link>
-      </div> */}
       <ZarpNavigation />
-      <Menu size={20} className="" />
+      <Menu size={20} className="inline-block lg:hidden" />
+      <Link
+        href="/register"
+        className="font-rhithmic bg-[#fe9902] text-black hover:text-white lg:flex items-center px-3 py-2 gap-2 rounded-md text-xs hover:bg-orange-400 transition-all ease-in hidden group"
+      >
+        GET STARTED{" "}
+        <ArrowRight
+          size={14}
+          className="group-hover:-rotate-45 group-hover:animate-pulse transition-all ease-in"
+        />
+      </Link>
     </div>
   );
 };

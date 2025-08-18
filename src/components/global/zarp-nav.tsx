@@ -1,7 +1,11 @@
 "use client";
 
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Link from "next/link";
 import * as React from "react";
+
+gsap.registerPlugin(ScrollToPlugin);
 
 import {
   NavigationMenu,
@@ -11,6 +15,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { AnimatedListItem } from "./animated-link";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -79,33 +84,57 @@ export function ZarpNavigation() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/#docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+              <AnimatedListItem
+                title="Why choose us?"
+                description="Learn what makes Zarp the fastest and most reliable delivery
+                platform."
+                targetId="#why"
+              />
+              {/* <ListItem targetId="why" title="Why choose us?">
+                Learn what makes Zarp the fastest and most reliable delivery
+                platform.
+              </ListItem> */}
+              <AnimatedListItem
+                targetId="#partners"
+                title="Partners & Supporters"
+                description="Discover the brands and organizations that trust and support
+                Zarp."
+              />
+              <AnimatedListItem
+                targetId="#faq"
+                title="Frequently Asked Questions"
+                description="Find quick answers to common questions about how Zarp works."
+              />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
-            Components
+            About us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {components.map((component) => (
+              {/* {components.map((component) => (
                 <ListItem
-                  key={component.title}
+                  key={component.title} 
                   title={component.title}
                   href={component.href}
                 >
                   {component.description}
                 </ListItem>
-              ))}
+              ))} */}
+              <ListItem href="/about" title="Our Story">
+                Learn how we started and what drives our mission forward.
+              </ListItem>
+
+              <ListItem href="#team" title="Our Team">
+                Meet the people behind the product, working to deliver
+                excellence.
+              </ListItem>
+
+              <ListItem href="#careers" title="Careers">
+                Join us in shaping the future — explore open roles.
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -166,7 +195,7 @@ function ListItem({
 }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
-      <NavigationMenuLink className="bg-transparent" asChild>
+      <NavigationMenuLink asChild>
         <Link href={href}>
           <div className="text-sm leading-none font-medium">{title}</div>
           <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">

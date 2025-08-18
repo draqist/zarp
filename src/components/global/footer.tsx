@@ -82,6 +82,23 @@ const Footer = () => {
         <span className="text-platinum font-rhithmic tracking-tighter">
           Brick by brick - DRAQ
         </span>
+        <div className="flex gap-4">
+          <Button
+            variant="outline"
+            className="w-6 h-6 rounded-sm bg-transparent border-platinum"
+          >
+            <Twitter size={12} />
+          </Button>
+          <a href="#">
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a href="#">
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a href="#">
+            <Facebook className="w-5 h-5" />
+          </a>
+        </div>
       </div>
     </div>
   );
