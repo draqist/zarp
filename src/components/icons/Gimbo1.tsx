@@ -1,0 +1,17 @@
+const Gimbo1 = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path d="M60 0C93.1371 0 120 26.8629 120 60H60V0Z" fill="#746BEB" />
+      <path d="M120 120C86.8629 120 60 93.1371 60 60H120V120Z" fill="#3BB3BD" />
+      <path d="M0 120C33.1371 120 60 93.1371 60 60H0V120Z" fill="#FFC700" />
+      <path d="M0 60C33.1371 60 60 33.1371 60 0H0V60Z" fill="black" />
+    </svg>
+  );
+};
+
+export default Gimbo1;

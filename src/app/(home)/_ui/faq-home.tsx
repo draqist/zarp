@@ -11,12 +11,15 @@ import {
 } from "../../../components/ui/accordion";
 import { Button } from "../../../components/ui/button";
 
-gsap.registerPlugin(ScrollToPlugin);
+// gsap.registerPlugin(ScrollToPlugin);
 
 const HomeFaq = () => {
   return (
-    <section className="px-5 flex flex-col gap-3 lg:gap-4" id="faq">
-      <div className="grid grid-cols-1 border-t border-gray-400/35 pt-4">
+    <section
+      className="flex flex-col gap-3 lg:gap-10 lg:border-b lg:border-gray-400/35"
+      id="faq"
+    >
+      <div className="grid grid-cols-1 pt-10 px-5">
         <h1 className="text-lg lg:text-4xl font-rhithmic text-abyss font-medium tracking-tighter">
           Frequently Asked Questions
         </h1>
@@ -56,7 +59,7 @@ const FAQItems = () => {
     }
   };
   return (
-    <main className="hidden lg:grid grid-cols-2 lg:grid-cols-5 border-y-[1px] border-gray-400/35 lg:min-h-[500px]">
+    <main className="hidden lg:grid grid-cols-2 lg:grid-cols-5 border-t-[1px] border-gray-400/35 lg:min-h-[500px]">
       <div className="flex flex-col col-span-2 lg:col-span-2">
         {FAQS.map((qA) => (
           <div
@@ -100,6 +103,7 @@ const FAQItems = () => {
               <main className="p-1 bg-platinum/50 rounded-lg h-full">
                 <div className="relative h-full w-full">
                   <Image
+                    priority
                     src="/image.webp"
                     fill
                     alt="App Image"
@@ -110,6 +114,7 @@ const FAQItems = () => {
               <main className="p-1 bg-platinum/50 rounded-lg">
                 <div className="relative h-full w-full p-2">
                   <Image
+                    priority
                     src="/nurulloh-a-a-4_Ha_neGOEY-unsplash.jpg"
                     fill
                     alt="App Image"
@@ -129,7 +134,7 @@ const MobileFAQItems = () => {
   const [activeId, setActiveId] = useState<number>(FAQS[0].id);
   return (
     <div className="flex flex-col lg:hidden">
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion type="single" collapsible className="w-full px-4">
         {FAQS.map((qA) => (
           <AccordionItem key={qA.id} value={qA.id.toString()}>
             <AccordionTrigger className="hover:bg-platinum/50">

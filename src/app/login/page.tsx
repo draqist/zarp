@@ -13,6 +13,7 @@ export default function Login() {
       <div className="hidden lg:block lg:p-2 relative">
         <div className="relative h-full w-full rounded-lg">
           <Image
+            priority
             src="/Fluid_Pink_Blue_Wallpaper_8k_10.png"
             alt="banner-image"
             fill
@@ -46,6 +47,7 @@ export default function Login() {
         <div className="lg:px-36 lg:py-12 px-2 py-4 flex flex-col justify-between items-center min-w-full">
           <div className="w-full flex justify-center items-center">
             <Image
+              priority
               src="/traq-logo.png"
               alt="traq-logo"
               width={22}

@@ -1,14 +1,23 @@
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 const ZarpLogo = ({
   color,
   className,
+  routeHome,
 }: {
   color?: string;
   className?: string;
+  routeHome?: boolean;
 }) => {
+  const { push } = useRouter();
+  const handleRoute = () => {
+    if (routeHome) {
+      push("/");
+    } else return;
+  };
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2" onClick={handleRoute}>
       <svg
         width="22"
         height="22"

@@ -1,11 +1,7 @@
 "use client";
 
-import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Link from "next/link";
 import * as React from "react";
-
-gsap.registerPlugin(ScrollToPlugin);
 
 import {
   NavigationMenu,
@@ -19,10 +15,10 @@ import { AnimatedListItem } from "./animated-link";
 
 export function ZarpNavigation() {
   return (
-    <NavigationMenu viewport={false} className="hidden lg:flex">
+    <NavigationMenu viewport={false} className="hidden lg:flex w-max">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent font-rhithmic">
             Home
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -71,7 +67,7 @@ export function ZarpNavigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent font-rhithmic">
             About us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -100,17 +96,17 @@ export function ZarpNavigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuLink
             // className="bg-transparent"
             asChild
-            className="bg-transparent"
+            className="bg-transparent font-rhithmic"
           >
             <Link href="/docs">Docs</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent font-rhithmic">
             List
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -143,7 +139,7 @@ export function ZarpNavigation() {
               </li>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );

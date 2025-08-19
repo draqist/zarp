@@ -1,5 +1,9 @@
+import Gimbo from "@/components/icons/Gimbo";
+import Gimbo1 from "@/components/icons/Gimbo1";
+import Gimbo4 from "@/components/icons/Gimbo4";
+import Gimbo5 from "@/components/icons/Gimbo5";
 import { clsx, type ClassValue } from "clsx";
-import { Home, Rocket, SearchCheck, Smartphone, Users } from "lucide-react";
+import { Home } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -137,26 +141,42 @@ export const FAQS = [
     mobile_answer:
       "Yes, Zarp lets you track deliveries in real time with notifications and live ETAs for peace of mind.",
   },
+  // {
+  //   id: 8,
+  //   question: "Can I use Zarp for personal deliveries?",
+  //   answer:
+  //     "Absolutely! Zarp isn’t just for businesses. Individuals can send personal items — from gifts to urgent documents — through our platform. The process is simple: book a Zarper, set the pickup and drop-off, and track your item in real time until it arrives safely at its destination.",
+  //   mobile_answer:
+  //     "Yes, anyone can use Zarp to send personal packages, gifts, or documents easily and securely."
+  // },
+  {
+    id: 8,
+    question: "How is Zarp different from other logistics platforms?",
+    answer:
+      "Unlike other platforms, Zarp combines affordability, trust, and community-driven logistics. We don’t just connect people — we build an ecosystem where vendors scale, Zarpers earn flexibly, and customers enjoy seamless service. Our approach goes beyond transactions; we’re building a logistics culture where everyone benefits equally, creating lasting value for all.",
+    mobile_answer:
+      "Zarp stands out by blending trust, affordability, and community-driven logistics that benefit all users.",
+  },
 ];
 
 export const ZARP_VALUES = [
   {
     id: 1,
-    icon: Rocket, // lucide-react icon name
+    icon: Gimbo, // lucide-react icon name
     title: "Speed That Matters",
     description:
       "Get your items delivered quickly with Zarp’s optimized routes and reliable zappers. No more delays or excuses — just fast, efficient deliveries.",
   },
   {
     id: 2,
-    icon: Smartphone,
+    icon: Gimbo1,
     title: "Seamless Experience",
     description:
       "Whether you’re a vendor, a zapper, or the recipient, Zarp makes logistics simple with one unified platform. Track orders, manage pickups, and stay updated in real-time.",
   },
   {
     id: 3,
-    icon: SearchCheck,
+    icon: Gimbo5,
     title: "Trust & Transparency",
     description:
       "Know exactly where your package is, who’s handling it, and when it will arrive. Full visibility, no hidden fees, no surprises.",
@@ -170,7 +190,7 @@ export const ZARP_VALUES = [
   // },
   {
     id: 4,
-    icon: Users,
+    icon: Gimbo4,
     title: "Community of Zappers",
     description:
       "Logistics isn’t faceless — Zarp connects you with real, vetted individuals who make things happen. Join a trusted network built on reliability.",

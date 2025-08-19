@@ -7,14 +7,16 @@ import {
   Twitter,
 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 
 const Footer = () => {
+  const { push } = useRouter();
   return (
-    <div className="bg-abyss pt-20 px-5 pb-6 text-white flex flex-col gap-10">
+    <div className="bg-abyss min-h-[600px] pt-20 px-5 pb-6 text-white flex flex-col gap-10 relative">
       <section className="flex items-end justify-between">
-        <h1 className="text-xl lg:text-7xl">
+        <h1 className="text-xl lg:text-7xl font-rhithmic tracking-tighter">
           Ready to{" "}
           <span className="font-livret-sans text-[#ea910b]"> Zarp</span> it?
         </h1>
@@ -77,27 +79,40 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-400 text-sm flex items-center justify-between">
+      <div className="border-t border-white/10 mt-10 py-6 px-5 text-center text-gray-400 text-sm flex items-center justify-between absolute bottom-0 right-0 left-0">
         © {new Date().getFullYear()} Zarp. All rights reserved.
         <span className="text-platinum font-rhithmic tracking-tighter">
-          Brick by brick - DRAQ
+          Brick by brick - <Link href="https://draq.vercel.app/"> DRAQ </Link>
         </span>
         <div className="flex gap-4">
           <Button
             variant="outline"
             className="w-6 h-6 rounded-sm bg-transparent border-platinum"
+            onClick={() => push("https://x.com/zarp")}
           >
             <Twitter size={12} />
           </Button>
-          <a href="#">
+          <Button
+            variant="outline"
+            className="w-6 h-6 rounded-sm bg-transparent border-platinum"
+            onClick={() => push("https://x.com/zarp")}
+          >
             <Instagram className="w-5 h-5" />
-          </a>
-          <a href="#">
+          </Button>
+          <Button
+            variant="outline"
+            className="w-6 h-6 rounded-sm bg-transparent border-platinum"
+            onClick={() => push("https://x.com/zarp")}
+          >
             <Linkedin className="w-5 h-5" />
-          </a>
-          <a href="#">
+          </Button>
+          <Button
+            variant="outline"
+            className="w-6 h-6 rounded-sm bg-transparent border-platinum"
+            onClick={() => push("https://x.com/zarp")}
+          >
             <Facebook className="w-5 h-5" />
-          </a>
+          </Button>
         </div>
       </div>
     </div>

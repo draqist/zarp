@@ -1,50 +1,27 @@
-import PartnersCarousel from "@/components/carousels/partners-carousel";
-import ZarpCard from "@/components/interactives/zarp-value-card";
-import { Badge } from "@/components/ui/badge";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import ZarpCard from "../interactives/zarp-value-card";
+import { Badge } from "../ui/badge";
 
-// if (typeof window !== "undefined") {
-//   gsap.registerPlugin(useGSAP);
-// }
-const PartnersAndSupporters = () => {
-  useGSAP(() => {
-    const items = gsap.utils.toArray(".marquee-item");
-    gsap.to(items, {
-      xPercent: -100 * items.length, // move all items left
-      duration: 30, // how fast it scrolls
-      ease: "none",
-      repeat: -1, // infinite
-      modifiers: {
-        xPercent: gsap.utils.wrap(-200 * items.length, 0), // wrap them endlessly
-      },
-    });
-  });
-  const partners = [
-    "/DHL.png",
-    "/fedEx.png",
-    "/redstar.png",
-    "/ups.png",
-    "/gig.png",
-    "/DHL.png",
-    "/fedEx.png",
-    "/redstar.png",
-    "/ups.png",
-    "/gig.png",
-  ];
-
+const PartnersCarousel = () => {
   return (
-    <section
-      className="px-5 border-y-[1px] border-gray-400/35 bg-platinum/75"
-      id="partners"
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
+      opts={{ loop: true }}
+      className="overflow-clip"
     >
-      <div className="py-1.25 flex items-start justify-start h-fit text-4xl font-rhithmic mt-6 mb-10 text-[#444444]">
-        Meet our partners
-      </div>
-      <main className="border-gray-400/35 pt- pb-4 grid grid-rows-1 gap-10">
-        <section className="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <CarouselContent className="flex lg:hidden gap-6 relative ml-0 mr-0 px-0 pl-0">
+        <CarouselItem className="w-full !pl-0">
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs gap-2 cursor-pointer relative bg-[#FFFEFE]">
             <div className="relative group h-[400px] overflow-hidden rounded-t-2xl rounded-b-lg p-5 w-full">
               <Image
@@ -72,7 +49,11 @@ const PartnersAndSupporters = () => {
               </span>
             </Badge>
           </div>
+        </CarouselItem>
+        <CarouselItem className="w-full pl-0">
           <ZarpCard />
+        </CarouselItem>
+        <CarouselItem className="w-full pl-0">
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs bg-[#FFFEFE] gap-2 cursor-pointer relative">
             <div className="relative h-[400px] p-5 w-full">
               <Image
@@ -100,32 +81,14 @@ const PartnersAndSupporters = () => {
               </span>
             </Badge>
           </div>
-        </section>
-        <PartnersCarousel />
-
-        {/* Marquee */}
-        <div className="overflow-hidden row-span-1 mt-6">
-          <div className="flex gap-auto items-center whitespace-nowrap group">
-            {[...partners, ...partners].map((logo, idx) => (
-              <div
-                key={idx}
-                className="flex-shrink-0 flex items-center justify-center w-32 h-16 relative marquee-item"
-              >
-                <Image
-                  priority
-                  src={logo}
-                  alt="Partner logo"
-                  height={48}
-                  width={120}
-                  className="object-contain grayscale group-hover:grayscale-0 transition-all ease-in-out h-12 object-center"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </main>
-    </section>
+        </CarouselItem>
+      </CarouselContent>
+      {/* <div className="absolute top-1/2 bottom-1/2">
+        <CarouselPrevious className="rounded-full p-2 bg-white/80 left-1 -top-10 size-6" />
+        <CarouselNext className="rounded-full p-2 bg-white/80 left-[350px] -top-10 size-6" />
+      </div> */}
+    </Carousel>
   );
 };
 
-export default PartnersAndSupporters;
+export default PartnersCarousel;
