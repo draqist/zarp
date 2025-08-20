@@ -27,7 +27,6 @@ const RegisterCarousel = () => {
             <div className="invisible lg:visible lg:p-2 relative h-full">
               <div className="relative h-full w-full rounded-lg">
                 <Image
-                  priority
                   src={item.image}
                   alt="banner-image"
                   fill

@@ -24,7 +24,6 @@ export default function ZarpCard() {
         className="relative h-[240px] lg:h-72 w-full"
       >
         <Image
-          priority
           src="/cycling.gif"
           alt="Image cycling"
           fill

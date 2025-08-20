@@ -1,6 +1,5 @@
 import { FAQS } from "@/lib/utils";
 import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import {
@@ -103,7 +102,6 @@ const FAQItems = () => {
               <main className="p-1 bg-platinum/50 rounded-lg h-full">
                 <div className="relative h-full w-full">
                   <Image
-                    priority
                     src="/image.webp"
                     fill
                     alt="App Image"
@@ -114,7 +112,6 @@ const FAQItems = () => {
               <main className="p-1 bg-platinum/50 rounded-lg">
                 <div className="relative h-full w-full p-2">
                   <Image
-                    priority
                     src="/nurulloh-a-a-4_Ha_neGOEY-unsplash.jpg"
                     fill
                     alt="App Image"

@@ -23,13 +23,7 @@ const MobileFormView = () => {
         transition={{ ease: "backInOut", duration: 2 }}
       >
         <div className="w-full flex justify-center items-center">
-          <Image
-            priority
-            src="/traq-logo.png"
-            alt="traq-logo"
-            width={22}
-            height={22}
-          />
+          <Image src="/traq-logo.png" alt="traq-logo" width={22} height={22} />
         </div>
         <div className="w-full">
           <LoginForm />

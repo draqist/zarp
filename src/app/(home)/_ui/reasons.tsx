@@ -27,9 +27,9 @@ const WhyChooseZarp = () => {
           </h1>
           <p className="text-muted-foreground text-justify lg:text-left">
             We prioritize speed, reliability, and a customer-first approach
-            making your satisfaction our utmost priority — Experience smoother
-            as operations as a vendor and seamless deliveries as a customer with
-            a logistics service committed to your service. <br />{" "}
+            making your satisfaction our utmost — Experience smoother as
+            operations as a vendor and seamless deliveries as a customer with a
+            logistics service committed to your service. <br />{" "}
             <Link
               href="/register"
               className="group flex items-center gap-2 hover:underline hover:underline-offset-4 transition-colors ease-in mt-2 hover:text-orange-400/90 text-orange-600 w-fit"

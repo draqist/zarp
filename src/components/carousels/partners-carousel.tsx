@@ -25,7 +25,6 @@ const PartnersCarousel = () => {
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs gap-2 cursor-pointer relative bg-[#FFFEFE]">
             <div className="relative group  h-[400px] overflow-hidden rounded-t-2xl rounded-b-lg p-5 w-full">
               <Image
-                priority
                 src="/dispatch.jpg"
                 alt="Zarper of the week"
                 fill
@@ -57,7 +56,6 @@ const PartnersCarousel = () => {
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs bg-[#FFFEFE] gap-2 cursor-pointer relative">
             <div className="relative h-[400px] p-5 w-full">
               <Image
-                priority
                 src="/owner.jpg"
                 alt="Zarper of the week"
                 fill
