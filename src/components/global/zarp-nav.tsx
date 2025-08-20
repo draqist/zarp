@@ -11,14 +11,28 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { usePathname, useRouter } from "next/navigation";
 import { AnimatedListItem } from "./animated-link";
 
 export function ZarpNavigation() {
+  const pathName = usePathname();
+  const { push } = useRouter();
+  const handleRouteNavigation = (route: string) => {
+    console.log({ pathName, route });
+    if (pathName === route) {
+      return;
+    } else {
+      push(route);
+    }
+  };
   return (
     <NavigationMenu viewport={false} className="hidden lg:flex w-max">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent font-rhithmic">
+          <NavigationMenuTrigger
+            className="bg-transparent font-rhithmic"
+            onClick={() => handleRouteNavigation("/")}
+          >
             Home
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -67,7 +81,10 @@ export function ZarpNavigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent font-rhithmic">
+          <NavigationMenuTrigger
+            className="bg-transparent font-rhithmic"
+            onClick={() => handleRouteNavigation("/about")}
+          >
             About us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
