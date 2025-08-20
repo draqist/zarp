@@ -8,15 +8,14 @@ import WhyChooseZarp from "./_ui/reasons";
 
 export default function HomePage() {
   return (
-    <div
-      className="min-h-screen bg-[#FFFEFE] flex flex-col gap-6"
-      id="smooth-content"
-    >
-      <Hero />
-      <WhyChooseZarp />
-      <PartnersAndSupporters />
-      <HomeFaq />
-      <Footer />
-    </div>
+    <main>
+      <div className="min-h-screen bg-[#FFFEFE] flex flex-col gap-6">
+        <Hero />
+        <WhyChooseZarp />
+        <PartnersAndSupporters />
+        <HomeFaq />
+        <Footer />
+      </div>
+    </main>
   );
 }

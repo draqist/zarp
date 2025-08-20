@@ -9,7 +9,6 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
-import { Input } from "../ui/input";
 
 const Footer = () => {
   const { push } = useRouter();
@@ -50,38 +49,13 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* Newsletter */}
-        <div>
-          <h4 className="text-lg font-semibold mb-3">Stay Updated</h4>
-          <div className="flex gap-2">
-            <Input
-              placeholder="Your email"
-              className="bg-gray-800 border-gray-700 text-white"
-            />
-            <Button className="bg-orange-600 hover:bg-orange-700">
-              Subscribe
-            </Button>
-          </div>
-          <div className="flex gap-4 mt-4">
-            <a href="#">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#">
-              <Facebook className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
       </div>
       <div className="border-t border-white/10 mt-10 py-6 px-5 text-center text-gray-400 text-sm flex items-center justify-between absolute bottom-0 right-0 left-0">
-        © {new Date().getFullYear()} Zarp. All rights reserved.
-        <span className="text-platinum font-rhithmic tracking-tighter">
+        <span className="hidden lg:inline">
+          © {new Date().getFullYear()} Zarp. All rights reserved.
+        </span>
+
+        <span className="text-platinum text-xs lg:text-sm font-rhithmic tracking-tighter">
           Brick by brick - <Link href="https://draq.vercel.app/"> DRAQ </Link>
         </span>
         <div className="flex gap-4">

@@ -106,7 +106,7 @@ const ValueCard = ({
         />
       </div>
 
-      <div>
+      <div className="flex flex-col items-start gap-1">
         <h4 className="text-abyss text-md lg:text-lg mb-1"> {title}</h4>
         <p className="text-xs lg:text-sm text-muted-foreground">
           {description}

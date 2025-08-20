@@ -37,7 +37,7 @@ const Swift1Icon = () => (
         // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         d="M156.19 55.92S80.42 94.52 42.63 154 7.83 290 53.75 346.8s133.69 49.34 207.18 85.32 154.57 28.57 189.32-47.66-17.65-104.72-26.65-192.94-88.53-217.4-267.41-135.6"
-        opacity="0.7"
+        // opacity="0.7"
       ></motion.path>
     </g>
     <g id="freepik--Lamp--inject-39">

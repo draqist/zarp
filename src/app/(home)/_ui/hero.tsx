@@ -2,6 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import Image from "next/image";
 
 // if (typeof window !== "undefined") {
 //   gsap.registerPlugin(useGSAP, SplitText);
@@ -29,14 +30,14 @@ const Hero = () => {
   return (
     <section className="px-5 h-[calc(100vh-64px)] relative pt-5 flex flex-col gap-6 hero-container">
       {/* Hero background */}
-      <div
-        className="max-h-screen h-9/12 relative rounded-md"
-        style={{
-          backgroundImage: "url('/kai-pilger-tL92LY152Sk-unsplash.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="max-h-screen h-9/12 relative rounded-md">
+        <Image
+          src="/kai-pilger-tL92LY152Sk-unsplash.jpg"
+          fill
+          className="object-cover object-center rounded-md"
+          alt="Zarp Image"
+          priority
+        />
         <div className="absolute left-4 bottom-4 right-4  lg:left-12 lg:bottom-12">
           <h1 className="text-2xl lg:text-7xl text-white split-words">
             <span className="font-livret-sans">Zarp </span> it — Get it there,

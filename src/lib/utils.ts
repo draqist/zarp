@@ -172,7 +172,7 @@ export const ZARP_VALUES = [
     icon: Gimbo1,
     title: "Seamless Experience",
     description:
-      "Whether you’re a vendor, a zapper, or the recipient, Zarp makes logistics simple with one unified platform. Track orders, manage pickups, and stay updated in real-time.",
+      "Be a vendor or customer, Zarp makes logistics simple with one unified platform. Track orders, manage pickups, and stay updated in real-time.",
   },
   {
     id: 3,
