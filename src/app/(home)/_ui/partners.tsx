@@ -40,7 +40,7 @@ const PartnersAndSupporters = () => {
       className="px-5 border-y-[1px] border-gray-400/35 bg-platinum/75"
       id="partners"
     >
-      <div className="py-1.25 flex items-start justify-start h-fit text-4xl font-rhithmic mt-6 mb-10 text-[#444444]">
+      <div className="py-1.25 flex items-start justify-start h-fit text-3xl md:text-4xl font-rhithmic mt-6 mb-10 text-[#444444]">
         Meet our partners
       </div>
       <main className="border-gray-400/35 pt- pb-4 grid grid-rows-1 gap-10">

@@ -24,17 +24,11 @@ const Swift1Icon = () => (
     <g id="freepik--background-simple--inject-39">
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         d="M156.19 55.92S80.42 94.52 42.63 154 7.83 290 53.75 346.8s133.69 49.34 207.18 85.32 154.57 28.57 189.32-47.66-17.65-104.72-26.65-192.94-88.53-217.4-267.41-135.6"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         d="M156.19 55.92S80.42 94.52 42.63 154 7.83 290 53.75 346.8s133.69 49.34 207.18 85.32 154.57 28.57 189.32-47.66-17.65-104.72-26.65-192.94-88.53-217.4-267.41-135.6"
         // opacity="0.7"
@@ -43,9 +37,6 @@ const Swift1Icon = () => (
     <g id="freepik--Lamp--inject-39">
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="gray"
         strokeMiterlimit="10"
@@ -53,9 +44,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -64,9 +52,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -75,9 +60,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -93,123 +75,72 @@ const Swift1Icon = () => (
     >
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M312.98 57.92V42.31h14.56v113.12M312.98 296.49V62.16M327.54 159.67v260.16h-14.56V302.27M237 49.16v-6.85h14.56v5.6M237 170.84v-4.59M251.56 406.34v13.49H237v-63.61M251.56 355.97v45.36M89.12 393.23v-37.01M103.68 355.97v63.86H89.12V399.4M251.56 165v5.59M194.36 165.67h118.67v-16h-270M100.7 165.67h89.8M88.37 165.67h8.48M43.03 165.67h40.71M274.24 317.11h30.09v23.29h-30.09zM200.95 317.11h30.09v23.29h-30.09zM70.71 317.11h87.03v23.29H70.71z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M132.36 317.11h25.38v23.29h-25.38zM57.02 312.43h249.83v4.66H57.02z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M121.74 312.43h185.1v4.66h-185.1z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M60.33 309h88.82v3.56H60.33zM168.53 309h18.21v3.34h-18.21zM206.12 309h18.21v3.34h-18.21zM243.71 309h18.21v3.34h-18.21zM281.3 309h18.21v3.34H281.3zM157.74 340.4h43.21M231.03 340.4h43.21M132.05 312.46v-3.34M149.15 309h19.38M186.74 309h19.38M224.33 309h19.38M261.92 309h19.38M62.16 356.36h250.87v-16h-270M43.03 356.36h14.51M217.18 170.71h83.04v68.99h-83.04z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M233.45 170.71h66.77v68.99h-66.77z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M274.66 176.2h-14a2.44 2.44 0 0 1-2.44-2.44 2.44 2.44 0 0 1 2.44-2.44h14a2.44 2.44 0 0 1 2.44 2.44 2.44 2.44 0 0 1-2.44 2.44ZM217.18 239.68h83.04v68.99h-83.04z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M233.45 239.68h66.77v68.99h-66.77z"
       ></motion.path>
       <rect width="18.88" height="4.87" x="258.22" y="240.29" rx="2.44"></rect>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M121.04 239.68h83.04v68.99h-83.04z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M137.31 239.68h66.77v68.99h-66.77z"
       ></motion.path>
       <rect width="18.88" height="4.87" x="162.09" y="240.29" rx="2.44"></rect>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M274.24 126.2h30.09v23.29h-30.09zM200.95 126.2h30.09v23.29h-30.09zM70.71 126.2h87.03v23.29H70.71z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M132.36 126.2h25.38v23.29h-25.38zM57.02 121.53h249.83v4.66H57.02z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M121.74 121.53h185.1v4.66h-185.1z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M84.48 118.09H60.33v3.56h88.82v-3.56H88.53M168.53 118.1h18.21v3.34h-18.21zM206.12 118.1h18.21v3.34h-18.21zM243.71 118.1h18.21v3.34h-18.21zM281.3 118.1h18.21v3.34H281.3zM157.74 149.5h43.21M231.03 149.5h43.21M132.05 121.55v-3.33M149.15 118.1h19.38M186.74 118.1h19.38M224.33 118.1h19.38M261.92 118.1h19.38M217.18 48.78h83.04v68.99h-83.04z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M233.45 94.6V48.78h66.76v68.99h-66.76v-17.4"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M274.66 54.26h-14a2.44 2.44 0 0 1-2.44-2.44 2.43 2.43 0 0 1 2.44-2.43h14a2.43 2.43 0 0 1 2.44 2.43 2.44 2.44 0 0 1-2.44 2.44ZM204.08 78.99v38.78h-83.04V48.78h83.04v25.88"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M204.08 78.99v38.78h-66.77V48.78h66.77v22.99"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="M178.53 54.26h-14a2.43 2.43 0 0 1-2.43-2.44 2.43 2.43 0 0 1 2.43-2.43h14a2.44 2.44 0 0 1 2.47 2.43 2.44 2.44 0 0 1-2.47 2.44ZM286.02 356.44l27.18 18.57M313.16 389.02l-47.52-32.49M209.69 356.44l27.17 18.57M236.82 389.02l-47.52-32.49"
       ></motion.path>
     </g>
@@ -228,9 +159,6 @@ const Swift1Icon = () => (
     <g id="freepik--boxes-2--inject-39">
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="gray"
         strokeMiterlimit="10"
@@ -238,9 +166,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#d1d1d1"
         stroke="gray"
         strokeMiterlimit="10"
@@ -248,17 +173,11 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         d="m349.66 370.7-5.97-13.2-5.99 13.17 3.1.01v13.49l5.75.01.01-13.49zM341.3 386.94v6.74c0 .62.19.84.5.85s.5-.23.5-.85V387h.92v6.64c0 1.4-.49 2.2-1.44 2.19s-1.44-.8-1.44-2.19v-6.65ZM346.74 389.12v1.13c0 1.4-.47 2.16-1.44 2.16h-.46v3.28h-1V387h1.42c1.01 0 1.48.72 1.48 2.12m-1.9-.92v3h.46c.31 0 .47-.2.47-.82V389c0-.62-.17-.83-.48-.83Z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#f5f5f5"
         stroke="gray"
         strokeMiterlimit="10"
@@ -266,9 +185,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="gray"
         strokeMiterlimit="10"
@@ -276,9 +192,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#d1d1d1"
         stroke="gray"
         strokeMiterlimit="10"
@@ -286,9 +199,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#f5f5f5"
         stroke="gray"
         strokeMiterlimit="10"
@@ -296,9 +206,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="gray"
         strokeMiterlimit="10"
@@ -306,9 +213,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#d1d1d1"
         stroke="gray"
         strokeMiterlimit="10"
@@ -316,17 +220,11 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         d="m428.66 290.2-5.97-13.2-5.99 13.17 3.1.01v13.49l5.75.01.01-13.49zM420.3 306.44v6.74c0 .62.19.84.5.85s.5-.23.5-.85v-6.73h.92v6.64c0 1.4-.49 2.2-1.44 2.19s-1.44-.8-1.44-2.19v-6.65ZM425.74 308.62v1.13c0 1.4-.47 2.16-1.44 2.16h-.46v3.28h-1v-8.73h1.42c1.01 0 1.48.76 1.48 2.16m-1.9-.92v3h.46c.31 0 .47-.2.47-.82v-1.31c0-.62-.17-.83-.48-.83Z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#f5f5f5"
         stroke="gray"
         strokeMiterlimit="10"
@@ -334,9 +232,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="gray"
         strokeMiterlimit="10"
@@ -344,9 +239,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#d1d1d1"
         stroke="gray"
         strokeMiterlimit="10"
@@ -354,9 +246,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#f5f5f5"
         stroke="gray"
         strokeMiterlimit="10"
@@ -369,63 +258,36 @@ const Swift1Icon = () => (
       stroke="gray"
       strokeMiterlimit="10"
     >
+      <motion.path variants={draw} d="M474 119H350V54h124z"></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
-        d="M474 119H350V54h124z"
-      ></motion.path>
-      <motion.path
-        variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="m467.61 54.57 5.7 11.4H354.23L350 54"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="m467.61 66.28 5.7 11.41H354.23L350 65.72"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="m467.61 78 5.7 11.4H354.23L350 77.44"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="m467.61 89.72 5.7 11.4H354.23L350 89.15"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         d="m467.61 101.44 5.7 11.4H354.23L350 100.87"
       ></motion.path>
     </g>
     <g id="freepik--Character--inject-39">
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         d="M154.5 434.92c38.51 0 71.27 5.81 83.45 13.92l32.57 12.92-82.69 20.5-19.7-5.76q-6.66.24-13.63.25c-48.9 0-88.53-9.37-88.53-20.92s39.63-20.91 88.53-20.91"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -434,9 +296,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -445,9 +304,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -456,9 +312,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -467,9 +320,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -478,9 +328,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -489,9 +336,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -500,9 +344,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -511,9 +352,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -522,9 +360,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -533,9 +368,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -545,9 +377,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -556,9 +385,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -567,9 +393,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -578,9 +401,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -589,9 +409,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -600,9 +417,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -611,9 +425,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         stroke="#263238"
         strokeLinecap="round"
@@ -622,9 +433,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#dedede"
         stroke="#263238"
         strokeLinecap="round"
@@ -633,9 +441,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#d1d1d1"
         stroke="#263238"
         strokeLinecap="round"
@@ -644,9 +449,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#f5f5f5"
         stroke="#263238"
         strokeLinecap="round"
@@ -655,9 +457,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -666,17 +465,11 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#263238"
         d="m201.48 340.32-10.04-7.09-2.01 14.27 3.13-1.87 4.11 10.93 5.81-3.45-4.12-10.93zM198 358.51l2.05 5.46c.19.5.45.57.76.38s.44-.48.25-1l-2.06-5.44.92-.55 2 5.38a2 2 0 0 1-.79 2.65c-1 .57-1.7.22-2.12-.91l-2-5.39ZM204.17 357l.35.92a1.93 1.93 0 0 1-.8 2.61l-.46.28 1 2.65-1 .58-2.64-7.04 1.44-.85c.94-.62 1.69-.29 2.11.85m-2.19.4.9 2.4.46-.28c.31-.18.42-.45.23-.95l-.4-1.06c-.19-.51-.42-.57-.73-.38ZM260.54 293.37l-10.05-7.09-2 14.27 3.12-1.86 4.12 10.93 5.8-3.46-4.11-10.93zM257.08 311.57l2.06 5.45c.19.51.45.57.76.39s.44-.49.25-1l-2.06-5.41.92-.55 2 5.38a2 2 0 0 1-.78 2.64c-1 .57-1.7.22-2.13-.91l-2-5.38ZM263.23 310l.35.92a2 2 0 0 1-.8 2.62l-.46.27 1 2.66-1 .58-2.64-7.05 1.44-.86c.97-.56 1.68-.23 2.11.86m-2.19.41.9 2.39.46-.27c.31-.19.42-.45.23-1l-.4-1.06c-.19-.5-.42-.56-.73-.38Z"
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -685,9 +478,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -696,9 +486,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -707,9 +494,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -718,9 +502,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -729,9 +510,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"
@@ -740,9 +518,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#92E3A9"
         stroke="#263238"
         strokeLinecap="round"
@@ -751,9 +526,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="#fff"
         stroke="#263238"
         strokeLinecap="round"
@@ -762,9 +534,6 @@ const Swift1Icon = () => (
       ></motion.path>
       <motion.path
         variants={draw}
-        // initial={{ pathLength: 0 }}
-        // whileInView={{ pathLength: 1 }}
-        // transition={{ duration: 2, ease: "linear", repeat: 1 }}
         fill="none"
         stroke="#263238"
         strokeLinecap="round"

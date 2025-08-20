@@ -28,9 +28,9 @@ const Hero = () => {
     });
   });
   return (
-    <section className="px-5 h-[calc(100vh-64px)] relative pt-5 flex flex-col gap-6 hero-container">
+    <section className="px-5 lg:h-[calc(100vh-64px)] relative pt-5 flex flex-col gap-6 hero-container">
       {/* Hero background */}
-      <div className="max-h-screen h-9/12 relative rounded-md">
+      <div className="max-h-screen h-[380px] lg:h-9/12 relative rounded-md">
         <Image
           src="/kai-pilger-tL92LY152Sk-unsplash.jpg"
           fill

@@ -20,10 +20,10 @@ const PartnersCarousel = () => {
       opts={{ loop: true }}
       className="overflow-clip"
     >
-      <CarouselContent className="flex lg:hidden gap-6 relative ml-0 mr-0 px-0 pl-0">
-        <CarouselItem className="w-full !pl-0">
+      <CarouselContent className="lg:hidden gap-6 relative ml-0 mr-0 px-0 pl-0">
+        <CarouselItem className="w-fit -pl-0">
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs gap-2 cursor-pointer relative bg-[#FFFEFE]">
-            <div className="relative group h-[400px] overflow-hidden rounded-t-2xl rounded-b-lg p-5 w-full">
+            <div className="relative group  h-[400px] overflow-hidden rounded-t-2xl rounded-b-lg p-5 w-full">
               <Image
                 priority
                 src="/dispatch.jpg"
@@ -50,10 +50,10 @@ const PartnersCarousel = () => {
             </Badge>
           </div>
         </CarouselItem>
-        <CarouselItem className="w-full pl-0">
+        <CarouselItem className="w-fit pl-0">
           <ZarpCard />
         </CarouselItem>
-        <CarouselItem className="w-full pl-0">
+        <CarouselItem className="w-fit pl-0">
           <div className="border-[1px] border-camo/30  text-center flex flex-col items-center justify-start rounded-2xl p-2 shadow-2xs bg-[#FFFEFE] gap-2 cursor-pointer relative">
             <div className="relative h-[400px] p-5 w-full">
               <Image
