@@ -114,7 +114,7 @@ const PartnersAndSupporters = () => {
                   alt="Partner logo"
                   height={48}
                   width={120}
-                  className="object-contain grayscale group-hover:grayscale-0 transition-all ease-in-out h-12 object-center"
+                  className="object-contain lg:grayscale group-hover:grayscale-0 transition-all ease-in-out h-12 object-center"
                 />
               </div>
             ))}

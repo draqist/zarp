@@ -80,6 +80,21 @@ const rhithmic = localFont({
   ],
   variable: "--font-rhithmic",
 });
+const machina = localFont({
+  src: [
+    {
+      path: "./fonts/NeueMachina-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/NeueMachina-Bold.woff2",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-machina",
+});
 
 // app/page.tsx
 // export const metadata: Metadata = {
@@ -150,7 +165,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} antialiased`}
+        className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} ${machina.variable} antialiased`}
       >
         <Providers>
           {children}
