@@ -8,7 +8,7 @@ import WhyChooseZarp from "./_ui/reasons";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="top-16 relative">
       <div className="min-h-screen bg-[#FFFEFE] flex flex-col gap-6">
         <Hero />
         <WhyChooseZarp />

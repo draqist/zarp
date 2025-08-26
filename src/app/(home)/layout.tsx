@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/global/navbar";
+import PageWrapper from "@/components/global/page-wrapper";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -28,26 +28,9 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
   );
   return (
     <>
-      <Navbar />
       <div className="bg-zarp" id="smooth-wrapper">
-        <div className="top-16 relative" id="smooth-content">
-          {children}
-        </div>
-        <div className="g-scrollbar" data-es-scrollbar>
-          <div
-            className="g-scrollbar__inner"
-            data-es-scrollbar-inner
-            style={{ height: "100%" }}
-          >
-            <div
-              className="g-scrollbar__thumb"
-              data-es-scrollbar-thumb
-              style={{
-                height: "164.367px",
-                transform: "matrix(1, 0, 0, 1, 0, 0)",
-              }}
-            ></div>
-          </div>
+        <div className="" id="smooth-content">
+          <PageWrapper>{children}</PageWrapper>
         </div>
       </div>
     </>

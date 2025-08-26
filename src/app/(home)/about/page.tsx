@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative top-16">
       <div className="h-[calc(100vh-64px)] grid grid-cols-[1fr_42vw_1fr] grid-flow-row auto-cols-fr auto-rows-[minmax(0, auto)]">
         <div className=" grid grid-rows-7">
           <div className="row-span-3 p-10 px-5 text-justify">
@@ -21,14 +21,6 @@ const AboutPage = () => {
               problem is now growing into a community-powered movement to change
               how goods move across cities.
             </span>
-            {/* <span>
-              We envisioned a platform that could change this narrative. A system where vendors, riders, and customers are seamlessly connected in real time — just like how ride-hailing changed personal transport. What started as a spark of an idea has grown into a mission to create a logistics infrastructure that is scalable, transparent, and deeply human-centered.
-            </span> */}
-            {/* <p className="pt-2">
-              We are building the rails for on-demand logistics in Nigeria and
-              beyond, not just with technology, but with a community-driven
-              approach that empowers every participant in the ecosystem.
-            </p> */}
           </div>
           <div className="row-span-2 border-y border-inherit"></div>
           <div className="row-span-2 p-10 px-5">

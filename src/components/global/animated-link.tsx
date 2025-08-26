@@ -2,11 +2,12 @@
 
 import { NavigationMenuLink } from "@radix-ui/react-navigation-menu";
 import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Link from "next/link";
 
-// if (typeof window !== "undefined") {
-//   gsap.registerPlugin(useGSAP, ScrollToPlugin);
-// }
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollToPlugin);
+}
 
 type ListItemProps = {
   title: string;
@@ -19,15 +20,14 @@ export function AnimatedListItem({
   targetId,
   description,
 }: ListItemProps) {
-  let path: string;
-  if (typeof window !== undefined) {
-    path = window.location.pathname;
-  }
+  const element = document.getElementById(targetId);
+  if (!element) return;
   const handleClick = (e: React.MouseEvent) => {
+    console.log(element);
     e.preventDefault();
     gsap.to(window, {
       duration: 1,
-      scrollTo: { y: `${targetId}`, offsetY: 62 },
+      scrollTo: { y: element, offsetY: 62 },
       ease: "power2.inOut",
     });
   };

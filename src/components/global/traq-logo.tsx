@@ -5,10 +5,12 @@ const ZarpLogo = ({
   color,
   className,
   routeHome,
+  size = "22",
 }: {
   color?: string;
   className?: string;
   routeHome?: boolean;
+  size?: string;
 }) => {
   const { push } = useRouter();
   const handleRoute = () => {
@@ -19,9 +21,9 @@ const ZarpLogo = ({
   return (
     <div className="flex items-center gap-2" onClick={handleRoute}>
       <svg
-        width="22"
-        height="22"
-        viewBox="0 0 22 22"
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
