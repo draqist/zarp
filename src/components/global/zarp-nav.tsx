@@ -18,7 +18,6 @@ export function ZarpNavigation() {
   const pathName = usePathname();
   const { push } = useRouter();
   const handleRouteNavigation = (route: string) => {
-    console.log({ pathName, route });
     if (pathName === route) {
       return;
     } else {
@@ -31,7 +30,7 @@ export function ZarpNavigation() {
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className="bg-transparent font-rhithmic"
-            onClick={() => handleRouteNavigation("/")}
+            // onClick={() => handleRouteNavigation("/")}
           >
             Home
           </NavigationMenuTrigger>
@@ -82,7 +81,7 @@ export function ZarpNavigation() {
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className="bg-transparent font-rhithmic"
-            onClick={() => handleRouteNavigation("/about")}
+            // onClick={() => handleRouteNavigation("/about")}
           >
             About us
           </NavigationMenuTrigger>
@@ -112,13 +111,13 @@ export function ZarpNavigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuLink
             // className="bg-transparent"
             asChild
             className="bg-transparent font-rhithmic"
           >
-            <Link href="/docs">Docs</Link>
+            <Link href="#">Contact</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -155,7 +154,7 @@ export function ZarpNavigation() {
               </li>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );

@@ -1,20 +1,85 @@
 "use client";
 
+import Image from "next/image";
+
 const AboutPage = () => {
   return (
     <main className="min-h-screen">
-      <div className="w-[calc(100vw/32*4w)] flex items-center justify-center pt-[116px] pb-[135px] px-[180px] @min-7xl:w-screen">
-        <section className="flex flex-nowrap">
-          <div className="flex text-[#010101] w-[180px] relative font-machina font-bold items-start justify-start">
-            <span className="h-3.5 w-3.5 rounded-full bg-[#010101] mr-2.5" />
-            <span className="leading-4">About</span>
+      <div className="h-[calc(100vh-64px)] grid grid-cols-[1fr_42vw_1fr] grid-flow-row auto-cols-fr auto-rows-[minmax(0, auto)]">
+        <div className=" grid grid-rows-7">
+          <div className="row-span-3 p-10 px-5 text-justify">
+            <p className="font-medium text-2xl font-rhithmic tracking-tight mb-4">
+              {" "}
+              Our story{" "}
+            </p>
+            <span>
+              Zarp was born from a simple frustration: missed packages, slow
+              deliveries, and limited courier options. We set out to fix that.
+              By connecting traditional delivery services with everyday drivers
+              already on the move, we’re making logistics faster, more reliable,
+              and more affordable. What began as an idea to solve a personal
+              problem is now growing into a community-powered movement to change
+              how goods move across cities.
+            </span>
+            {/* <span>
+              We envisioned a platform that could change this narrative. A system where vendors, riders, and customers are seamlessly connected in real time — just like how ride-hailing changed personal transport. What started as a spark of an idea has grown into a mission to create a logistics infrastructure that is scalable, transparent, and deeply human-centered.
+            </span> */}
+            {/* <p className="pt-2">
+              We are building the rails for on-demand logistics in Nigeria and
+              beyond, not just with technology, but with a community-driven
+              approach that empowers every participant in the ecosystem.
+            </p> */}
           </div>
-          <div className="text-[124px] grow-0 font-machina font-bold leading-[116px]">
-            Who we are
+          <div className="row-span-2 border-y border-inherit"></div>
+          <div className="row-span-2 p-10 px-5">
+            <h1 className="font-medium text-2xl font-rhithmic tracking-tight mb-4">
+              {" "}
+              Our Mission{" "}
+            </h1>
+            <span>
+              To build a smarter, more accessible logistics system that empowers
+              individuals, supports businesses, and creates opportunities for
+              drivers while making delivery seamless for everyone.
+            </span>
           </div>
-        </section>
+        </div>
+        <div className=" border-x-[1px] border-gray-400/35 p-10">
+          <div className="relative h-full rounded-4xl max-h-[680px] hover:rounded-2xl transition-all ease-in">
+            <Image
+              src="/ceo.jpg"
+              alt="Test"
+              fill
+              priority
+              className="rounded-4xl hover:rounded-2xl object-cover transition-all ease-in"
+            />
+          </div>
+          <h1 className="font-livret-sans font-light mt-2 mb-2 text-3xl text-center">
+            {" "}
+            Abdullah Abdulfatah O.
+          </h1>
+          <p className="text-center">CEO & CO-FOUNDER </p>
+        </div>
+        <div className=" grid grid-rows-7">
+          <div className="row-span-2 p-10 pb-0 px-5 text-justify">
+            <h1 className="font-medium text-2xl font-rhithmic tracking-tight mb-4">
+              {" "}
+              Our Philosophy{" "}
+            </h1>
+            <span>
+              Zarp is more than a logistics app—it’s a bridge between people,
+              businesses, and opportunities. We focus on solving real problems
+              with simple, scalable solutions, building trust through
+              innovation, openness, and reliability.
+            </span>
+          </div>
+          <div className="row-span-2 border-y p-10 px-5"></div>
+          <div className="row-span-3 flex flex-col items-center justify-center">
+            <h1 className="text-[230px] font-normal font-livret-sans leading-[220px] text-[#8a9a84]">
+              01
+            </h1>
+          </div>
+        </div>
       </div>
-      <div className="h-screen"></div>
       <div className="h-[700px] bg-abyss flex item-center" id="#team"></div>
     </main>
   );

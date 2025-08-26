@@ -96,7 +96,6 @@ const machina = localFont({
   variable: "--font-machina",
 });
 
-// app/page.tsx
 // export const metadata: Metadata = {
 //   title: "Zarp – Fast, Reliable Delivery for Vendors, Zarpers & Customers",
 //   description:

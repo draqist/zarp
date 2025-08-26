@@ -12,7 +12,7 @@ const Navbar = () => {
       <MobileMenu />
       <Link
         href="/register"
-        className="font-rhithmic bg-[#fe9902] text-black hover:text-white lg:flex items-center px-3 py-2 gap-2 rounded-md text-xs hover:bg-orange-400 transition-all ease-in hidden group"
+        className="font-rhithmic bg-[#8a9a84] text-white hover:text-white lg:flex items-center px-3 py-2 gap-2 rounded-md text-xs hover:bg-orange-400 transition-all ease-in hidden group"
       >
         GET STARTED{" "}
         <ArrowRight
