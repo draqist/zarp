@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "@/components/global/footer";
 import AboutHero from "./_ui/about-hero";
 import AboutHeroMobile from "./_ui/about-hero-mobile";
 import ValuesMobile from "./_ui/values-mobile";

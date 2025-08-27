@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutHeroMobile = () => {
   return (
     <section className="flex lg:hidden min-h-screen py-10 px-5 w-full">
-      <div className="flex flex-col gap-4 text-justify">
+      <div className="flex flex-col gap-4">
         <div className="flex text-[#010101] relative font-machina font-medium items-start justify-start">
           <span className="h-3 w-3 rounded-full bg-[#010101] mr-2.5" />
           <span className="leading-4">About</span>

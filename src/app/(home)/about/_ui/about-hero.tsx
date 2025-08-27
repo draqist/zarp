@@ -54,23 +54,42 @@ const AboutHero = () => {
         </div>
       </div>
       <div className=" grid grid-rows-7">
-        <div className="row-span-2 p-10 pb-0 px-5 text-justify">
+        <div className="row-span-2 flex flex-col justify-between p-5 py-10 pb-4">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col items-center">
+              <h1 className="text-5xl font-normal font-livret-sans text-sage">
+                1,200
+              </h1>
+              <span className="">deliveries processed</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <h1 className="text-5xl font-normal font-livret-sans text-sage">
+                1,000
+              </h1>
+              <span className="">active zarpers</span>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <h1 className="text-5xl font-normal font-livret-sans text-sage">
+              1,000,000
+            </h1>
+            <span className="">processed earnings</span>
+          </div>
+        </div>
+        <div className="row-span-2 border-y p-10 px-5"></div>
+        <div className="row-span-3 p-10 pb-0 px-5 text-justify">
           <h1 className="font-medium text-2xl font-machina tracking-tight mb-4">
             {" "}
             Our Philosophy{" "}
           </h1>
           <span>
-            Zarp is more than a logistics app—it’s a bridge between people,
-            businesses, and opportunities. We focus on solving real problems
-            with simple, scalable solutions, building trust through innovation,
-            openness, and reliability.
+            Zarp isn’t just a logistics app—it’s a bridge between people,
+            businesses, and opportunities. We believe in solving real-world
+            problems with practical solutions that work today and scale for
+            tomorrow. Through openness, innovation, and continuous improvement,
+            we’re building more than a service—we’re building a trusted
+            ecosystem that redefines the future of delivery.
           </span>
-        </div>
-        <div className="row-span-2 border-y p-10 px-5"></div>
-        <div className="row-span-3 flex flex-col items-center justify-center">
-          <h1 className="text-[230px] font-normal font-livret-sans leading-[220px] text-sage">
-            01
-          </h1>
         </div>
       </div>
     </section>

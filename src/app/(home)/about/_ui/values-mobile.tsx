@@ -129,7 +129,7 @@ export default function ValuesMobile() {
 
   return (
     <div
-      className="bg-abyss min-h-screen pb-10 text-white flex flex-col gap-6 item-center"
+      className="bg-abyss min-h-screen pb-4 text-white flex flex-col gap-6 item-center"
       id="team"
     >
       <section className="flex lg:hidden px-2 w-full flex-col">
@@ -146,9 +146,9 @@ export default function ValuesMobile() {
 
         <section className="px-1 border-x border-white/40 flex items-center justify-center py-6 pb-8">
           {/* Keep your existing VideoPlayer here */}
-          <div className="w-full max-w-md">
-            <VideoPlayer width={400} height={300} source="/riderHd.mp4" />
-          </div>
+          <VideoPlayer width={400} height={300} source="/riderHd.mp4" />
+          {/* <div className="w-full max-w-md">
+          </div> */}
         </section>
 
         <div className="flex flex-col gap-4 pt-6 px-3 pb-6 border border-white/40 border-b rounded-b-2xl">
