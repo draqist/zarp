@@ -133,10 +133,10 @@ export default function MobileMenu() {
       {/* Layer 2 (accent color) */}
       <div
         ref={layer2Ref}
-        className="fixed inset-0 bg-sage z-40 p-10 grid grid-cols-1 pointer-events-none pt-30"
+        className="fixed inset-0 bg-sage z-40 p-10 grid grid-cols-1 pointer-events-none pt-12 @min-[1280px]:pt-30"
         style={{ clipPath: "circle(0% at 100% 0)" }}
       >
-        <nav className="flex flex-col items-start space-y-10 text-2xl font-semibold">
+        <nav className="flex flex-col items-start space-y-6 @min-[1280px]:space-y-10 text-2xl font-semibold">
           {["Home", "About", "Services", "Contact"].map((text, i) => (
             <div key={text} className="flex items-center gap-5">
               <span

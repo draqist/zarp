@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutHero = () => {
   return (
     <section
-      className="h-[calc(100vh-64px)] hidden lg:grid grid-cols-[1fr_42vw_1fr] grid-flow-row auto-cols-fr auto-rows-[minmax(0, auto)] "
+      className="min-h-[calc(100vh-64px)] hidden lg:grid grid-cols-[1fr_38vw_1fr] @min-[1280px]:grid-cols-[1fr_42vw_1fr] grid-flow-row auto-cols-fr auto-rows-[minmax(0, auto)] "
       id="our-story"
     >
       <div className=" grid grid-rows-7">
