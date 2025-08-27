@@ -144,7 +144,7 @@ export default function ValuesMobile() {
           </span>
         </div>
 
-        <section className="px-1 border-x border-white/40 flex items-center justify-center py-6 pb-8">
+        <section className="px-3 border-x border-white/40 flex items-center justify-center py-6 pb-6">
           {/* Keep your existing VideoPlayer here */}
           <VideoPlayer width={400} height={300} source="/riderHd.mp4" />
           {/* <div className="w-full max-w-md">
