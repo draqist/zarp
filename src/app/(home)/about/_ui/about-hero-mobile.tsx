@@ -14,12 +14,12 @@ const AboutHeroMobile = () => {
         </h1>
         <div className="p-2.5 border border-gray-400/35 rounded-4xl bg-platinum/35">
           <Image
-            src="/ceo.jpg"
+            src="/dispatch.jpg"
             alt="Test"
             width={500}
             height={500}
             priority
-            className="rounded-3xl hover:rounded-[64px] object-cover transition-all ease-in"
+            className="rounded-3xl hover:rounded-[64px] object-cover w-[500px] h-[450px]  transition-all ease-in"
           />
           <div className="mt-1">
             <h1 className="font-livret-sans font-light text-3xl text-center">

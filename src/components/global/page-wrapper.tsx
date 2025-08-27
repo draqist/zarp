@@ -23,7 +23,6 @@ export default function PageWrapper({
 
   useEffect(() => {
     const id = searchParams.get("scrollTo");
-    console.log({ routeToScrollTo, id });
     if (id) {
       const el = document.getElementById(routeToScrollTo);
       if (el) {

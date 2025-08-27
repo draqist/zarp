@@ -13,7 +13,7 @@ import { Button } from "../ui/button";
 const Footer = () => {
   const { push } = useRouter();
   return (
-    <div className="bg-abyss min-h-[600px] pt-20 px-5 pb-6 text-white flex flex-col gap-10 relative">
+    <div className="bg-abyss min-h-[400px] lg:min-h-[600px] pt-10 lg:pt-20 px-5 pb-6 text-white flex flex-col gap-10 relative">
       <section className="flex items-end justify-between">
         <h1 className="text-xl lg:text-7xl font-rhithmic tracking-tighter">
           Ready to{" "}

@@ -176,43 +176,8 @@
     flex: 0 0 auto;
     padding: 0 2rem;
   }
-  [data-es-scrollbar] {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 100%;
-    cursor: pointer;
-    z-index: 999;
-  }
-  [data-es-scrollbar-inner] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  [data-es-scrollbar-thumb] {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  [data-es-scrollbar-thumb]:after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 5px;
-    height: calc(100% - 10px);
-    background: var(--accent-primary);
-    opacity: 0;
-    transition: all 0.35s ease-out 0.35s;
-    -webkit-transform: scaleX(0.5);
-    transform: scaleX(0.5);
-    -webkit-transform-origin: 100% 50% 0;
-    transform-origin: 100% 50% 0;
+  .stroke {
+    -webkit-text-stroke: 1px #fffefe45;
+    /* text-stroke: 1px #fffefe; */
   }
 }
