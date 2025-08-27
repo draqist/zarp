@@ -19,7 +19,10 @@ const ZarpLogo = ({
     } else return;
   };
   return (
-    <div className="flex items-center gap-2" onClick={handleRoute}>
+    <div
+      className="flex items-center justify-center gap-2"
+      onClick={handleRoute}
+    >
       <svg
         width={size}
         height={size}

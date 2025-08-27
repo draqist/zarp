@@ -196,13 +196,3 @@ export const ZARP_VALUES = [
       "Logistics isn’t faceless — Zarp connects you with real, vetted individuals who make things happen. Join a trusted network built on reliability.",
   },
 ];
-
-{
-  /* <div className="flex flex-nowrap gap-10 items-center justify-center">
-            <div className="flex text-[#010101] relative font-machina font-medium items-start justify-start -mt-6">
-              <span className="h-3 w-3 rounded-full bg-[#010101] mr-2.5" />
-              <span className="leading-4">About</span>
-            </div>
-            <h1 className="font-rhithmic font-bold text-7xl">Who we are</h1>
-          </div> */
-}

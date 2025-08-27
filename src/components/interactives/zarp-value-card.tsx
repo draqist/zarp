@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function ZarpCard() {
   {
-    /* Sage Green (#8a9a84) as this cards background or Warm Terracota (#d26a44)  */
+    /* Sage Green (-sage9a84) as this cards background or Warm Terracota (#d26a44)  */
   }
   const { push } = useRouter();
   return (
@@ -14,7 +14,7 @@ export default function ZarpCard() {
       whileHover={{ scale: 1.02, y: -5 }}
       transition={{ duration: 0.5, ease: "circOut" }}
       viewport={{ amount: 0.2, once: true }}
-      className="text-center flex flex-col items-center justify-center rounded-2xl p-2 pb-4 lg:p-8 shadow-2xs lg:shadow-lg gap-2 bg-[#8a9a84] cursor-pointer"
+      className="text-center flex flex-col items-center justify-center rounded-2xl p-2 pb-4 lg:p-8 shadow-2xs lg:shadow-lg gap-2 bg-sage cursor-pointer"
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}

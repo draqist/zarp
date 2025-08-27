@@ -1,4 +1,4 @@
-const Zarp = ({ color = "traq-black" }: { color?: string }) => {
+const Zarp = ({ color = "#000000" }: { color?: string }) => {
   return (
     <div className="flex items-center gap-2">
       <svg

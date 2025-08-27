@@ -4,9 +4,11 @@ import { createLogger } from "redux-logger";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import authReducer from "./slices/authSlice";
+import uiReducer from "./slices/uiSlice";
 
 const reducer = combineReducers({
   auth: authReducer,
+  ui: uiReducer,
 });
 
 const persistConfig = {

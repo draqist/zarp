@@ -52,6 +52,7 @@
   --color-abyss: var(--abyss);
   --color-camo: var(--camo);
   --color-lemon: var(--lemon);
+  --color-sage: var(--sage);
 }
 
 :root {
@@ -96,6 +97,7 @@
   --vf-vw-max: 2560;
   --vf-vw-min-unit: 1920px;
   --vf-vw-max-unit: 2560px;
+  --sage: hsl(104, 10%, 56%);
 }
 
 .dark {
@@ -135,6 +137,7 @@
   --abyss: hsl(0, 0%, 5%);
   --camo: hsl(108, 5%, 20%);
   --lemon: hsl(75, 89%, 71%);
+  --sage: hsl(104, 10%, 56%);
 }
 
 @layer base {
