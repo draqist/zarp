@@ -11,19 +11,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { usePathname, useRouter } from "next/navigation";
 import TransitionLink from "./transition-link";
 
 export function ZarpNavigation() {
-  const pathName = usePathname();
-  const { push } = useRouter();
-  const handleRouteNavigation = (route: string) => {
-    if (pathName === route) {
-      return;
-    } else {
-      push(route);
-    }
-  };
   return (
     <NavigationMenu viewport={false} className="hidden lg:flex w-max">
       <NavigationMenuList>

@@ -1,7 +1,6 @@
 "use client";
 
 import { animatePageIn } from "@/animations";
-import Footer from "@/components/global/footer";
 import Navbar from "@/components/global/navbar";
 import Zarp from "@/components/global/traq";
 import { useEffect } from "react";

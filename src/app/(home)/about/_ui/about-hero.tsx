@@ -38,7 +38,7 @@ const AboutHero = () => {
       <div className=" border-x-[1px] border-gray-400/35 p-10">
         <div className="relative h-full rounded-4xl max-h-[calc(100vh-212px)] hover:rounded-2xl transition-all ease-in">
           <Image
-            src="/dispatch.jpg"
+            src="/ceo.jpg"
             alt="Test"
             fill
             priority
