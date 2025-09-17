@@ -1,6 +1,7 @@
 import MobileMenu from "./mobile-menu";
 import TransitionLink from "./transition-link";
 import ZarpLogo from "./traq-logo";
+import { ZarpNavigation } from "./zarp-nav";
 
 const Navbar = () => {
   return (
@@ -8,8 +9,20 @@ const Navbar = () => {
       <TransitionLink href="/">
         <ZarpLogo color="#121212" className="text-[#121212]" />
       </TransitionLink>
-      {/* <ZarpNavigation /> */}
-      <MobileMenu />
+      <ZarpNavigation />
+      {/* <Link
+        href="/register"
+        className="font-rhithmic bg-sage text-white hover:text-white lg:flex items-center px-3 py-2 gap-2 rounded-md text-xs hover:bg-orange-400 transition-all ease-in hidden group"
+      >
+        GET STARTED{" "}
+        <ArrowRight
+          size={14}
+          className="group-hover:-rotate-45 group-hover:animate-pulse transition-all ease-in"
+        />
+      </Link> */}
+      <div>
+        <MobileMenu />
+      </div>
     </div>
   );
 };

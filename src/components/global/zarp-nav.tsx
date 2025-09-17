@@ -101,7 +101,12 @@ export function ZarpNavigation() {
             asChild
             className="bg-transparent font-rhithmic"
           >
-            <Link href="">Contact</Link>
+            <TransitionLink
+              href="/contact"
+              className="line-clamp-2 text-sm leading-snug"
+            >
+              Contact
+            </TransitionLink>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>

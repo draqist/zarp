@@ -11,10 +11,10 @@ export default function ZarpCard() {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.02, y: -5 }}
+      // whileHover={{ scale: 1.02, y: -5 }}
       transition={{ duration: 0.5, ease: "circOut" }}
       viewport={{ amount: 0.2, once: true }}
-      className="text-center flex flex-col items-center justify-center rounded-2xl p-2 pb-4 lg:p-8 shadow-2xs lg:shadow-lg gap-2 bg-sage cursor-pointer"
+      className="text-center flex flex-col items-center justify-center rounded-2xl p-2 pb-4 lg:p-8 lg:shadow-xs gap-2 bg-sage cursor-pointer"
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}

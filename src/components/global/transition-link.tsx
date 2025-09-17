@@ -16,10 +16,12 @@ export default function TransitionLink({
   href,
   label,
   children,
+  className,
 }: {
   href: string;
   children?: ReactNode;
   label?: string;
+  className?: string;
 }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -71,5 +73,9 @@ export default function TransitionLink({
     }
   };
 
-  return <span onClick={handleClick}>{children || label}</span>;
+  return (
+    <span onClick={handleClick} className={`${className} cursor-pointer`}>
+      {children || label}
+    </span>
+  );
 }

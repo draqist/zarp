@@ -164,8 +164,6 @@
     animation: marquee 15s linear infinite;
   }
   .scrollbar-hide ::-webkit-scrollbar-track {
-    /* width: 2.5px;
-    background-color: #ff5252; */
     display: none;
   }
   .scrollbar-hide {
@@ -178,6 +176,5 @@
   }
   .stroke {
     -webkit-text-stroke: 1px #fffefe45;
-    /* text-stroke: 1px #fffefe; */
   }
 }

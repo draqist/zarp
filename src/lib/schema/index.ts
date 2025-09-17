@@ -48,3 +48,12 @@ export const createDeliverySchema = z.object({
 });
 
 export const updateDeliverySchema = createDeliverySchema.partial();
+
+export const contactFormSchema = z.object({
+  name: z.string().min(2, { message: "Name is too short" }),
+  email: z.email({ message: "Invalid email address" }),
+  phone: z.string().min(7, { message: "Invalid phone number" }).optional(),
+  message: z.string().min(10, { message: "Message is too short" }),
+});
+
+export type ContactFormSchema = z.infer<typeof contactFormSchema>;

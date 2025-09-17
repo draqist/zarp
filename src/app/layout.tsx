@@ -164,7 +164,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} ${machina.variable} antialiased`}
+        className={`${livretSans.variable} ${rhithmic.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSerif.variable} ${machina.variable} antialiased scrollbar-hide`}
       >
         <Providers>
           {children}

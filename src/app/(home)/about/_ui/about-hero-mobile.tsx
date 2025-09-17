@@ -29,7 +29,7 @@ const AboutHeroMobile = () => {
             <p className="text-center">CEO & CO-FOUNDER </p>
           </div>
         </div>
-        <span>
+        <span className="text-justify">
           Zarp was born from a simple frustration: missed packages, slow
           deliveries, and limited courier options. We set out to fix that. By
           connecting traditional delivery services with everyday drivers already
