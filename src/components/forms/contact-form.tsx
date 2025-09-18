@@ -25,9 +25,9 @@ const ContactForm = () => {
     },
   });
   return (
-    <div className="pt-10 relative">
-      <div className="px-5 pb-2 border-b-2 border-gray-400/35 mb-5">
-        <h2 className="text-2xl font-medium">Reach us </h2>
+    <div className="pt-10">
+      <div className="px-5 pb-5 border-b border-gray-400/35 mb-5">
+        <h2 className="text-2xl font-medium">What do you need help with? </h2>
       </div>
       <Form {...form}>
         <form
@@ -46,7 +46,7 @@ const ContactForm = () => {
                     placeholder="Full Name* :"
                     value={field.value}
                     onChange={field.onChange}
-                    className="h-16 border-x-0 border-t-0 border-b border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 md:text-lg"
+                    className="h-16 border-x-0 border-t-0 border-b border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 text-base 2xl:text-lg"
                   />
                 </FormControl>
                 <FormMessage />
@@ -65,7 +65,7 @@ const ContactForm = () => {
                     placeholder="Email Address* :"
                     value={field.value}
                     onChange={field.onChange}
-                    className="h-16 border-x-0 border-t-0 border-b border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 md:text-lg"
+                    className="h-16 border-x-0 border-t-0 border-b border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 text-base 2xl:text-lg"
                   />
                 </FormControl>
                 <FormMessage />
@@ -84,7 +84,7 @@ const ContactForm = () => {
                     placeholder="Phone Number :"
                     value={field.value}
                     onChange={field.onChange}
-                    className="h-16 border-x-0 border-t-0 border-b-2 border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 md:text-lg"
+                    className="h-16 border-x-0 border-t-0 border-b border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 text-base 2xl:text-lg"
                   />
                 </FormControl>
                 <FormMessage />
@@ -102,16 +102,16 @@ const ContactForm = () => {
                     placeholder="How can we help you?* :"
                     value={field.value}
                     onChange={field.onChange}
-                    className="border-x-0 border-t-0 border-b-2 border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 pl-5 md:text-lg min-h-[326.5px]"
+                    className="border-x-0 border-t-0 border-none border-gray-400/35 rounded-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 px-5 text-base 2xl:text-lg h-48 2xl:h-72 overflow-y overflow-y-scroll"
                   />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <div className="px-5 mt-10">
+          <div className="px-5 absolute left-0 right-0 bottom-8 border-t border-gray-400/35 pt-8">
             <Button
-              className="h-20 w-full bg-sage hover:bg-sage/90 text-white md:text-lg"
+              className="h-20 w-full bg-sage hover:bg-sage/90 text-white text-base 2xl:text-lg"
               type="submit"
               disabled={false}
             >
