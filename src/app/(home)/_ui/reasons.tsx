@@ -1,9 +1,9 @@
+import TransitionLink from "@/components/global/transition-link";
 import Gimbo3 from "@/components/icons/Gimbo3";
 import Swift1Icon from "@/components/icons/Swift1";
 import { Badge } from "@/components/ui/badge";
 import { ZARP_VALUES } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { ComponentType } from "react";
 
 const WhyChooseZarp = () => {
@@ -21,7 +21,7 @@ const WhyChooseZarp = () => {
           </p>
         </Badge>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10 pt-0 lg:pt-4">
-          <h1 className="text-xl lg:text-4xl font-rhithmic max-w-2xl tracking-tight">
+          <h1 className="text-xl lg:text-[34px] 2xl:text-4xl font-rhithmic max-w-2xl tracking-tight">
             Experience excellence & speed <br /> with{" "}
             <span className=""> Zarp </span>
           </h1>
@@ -30,7 +30,7 @@ const WhyChooseZarp = () => {
             making your satisfaction our utmost — Experience smoother as
             operations as a vendor and seamless deliveries as a customer with a
             logistics service committed to your service. <br />{" "}
-            <Link
+            <TransitionLink
               href="/register"
               className="group flex items-center gap-2 hover:underline hover:underline-offset-4 transition-colors ease-in mt-2 hover:text-orange-400/90 text-orange-600 w-fit"
             >
@@ -40,7 +40,7 @@ const WhyChooseZarp = () => {
                 className="group-hover:animate-pulse group-hover:-rotate-45 group-hover:transition-all ease-in"
                 size={16}
               />
-            </Link>
+            </TransitionLink>
           </p>
         </div>
 

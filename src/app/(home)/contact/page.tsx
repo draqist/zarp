@@ -3,8 +3,9 @@ import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <main className="min-h-screen relative top-16">
-      <div className="grid grid-cols-2 divide-x divide-gray-400/35 min-h-[calc(100vh-64px)]">
+    // To make it scrollable just remove the max-h-screen and overflow-clip
+    <main className="max-h-screen relative top-16 overflow-clip">
+      <div className="grid grid-cols-2 divide-x divide-gray-400/35 h-[calc(100vh-64px)]">
         <div className="col-span-1 pt-10 text-blac flex flex-col justify-between items-start">
           <div className="px-5">
             <h1 className="font-machina font-semibold text-3xl">

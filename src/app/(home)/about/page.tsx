@@ -2,6 +2,7 @@
 
 import AboutHero from "./_ui/about-hero";
 import AboutHeroMobile from "./_ui/about-hero-mobile";
+import ZarpTeam from "./_ui/team";
 import ValuesMobile from "./_ui/values-mobile";
 
 const AboutPage = () => {
@@ -10,6 +11,7 @@ const AboutPage = () => {
       <AboutHero />
       <AboutHeroMobile />
       <ValuesMobile />
+      <ZarpTeam />
     </main>
   );
 };

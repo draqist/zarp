@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import TransitionLink from "../global/transition-link";
 
 export default function ZarpCard() {
   {
@@ -49,15 +50,16 @@ export default function ZarpCard() {
         Riders, vendors, and partners building the fastest and most reliable
         delivery ecosystem together.
       </motion.p>
-
-      <motion.button
-        // whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 200 }}
-        className="mt-6 px-6 py-3 rounded-xl bg-[#2a2a2a] text-[#fdfcf9] hover:opacity-90 transition cursor-pointer"
-        onClick={() => push("/register")}
-      >
-        Become a Partner
-      </motion.button>
+      <TransitionLink href="/register" className="text-[#fdfcf9]">
+        <motion.button
+          // whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 200 }}
+          className="mt-6 px-6 py-3 rounded-xl bg-[#2a2a2a] text-[#fdfcf9] hover:opacity-90 transition cursor-pointer"
+          // onClick={() => push("/register")}
+        >
+          Become a Partner
+        </motion.button>
+      </TransitionLink>
     </motion.div>
   );
 }

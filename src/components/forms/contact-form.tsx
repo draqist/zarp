@@ -109,7 +109,7 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          <div className="px-5 absolute left-0 right-0 bottom-8 border-t border-gray-400/35 pt-8">
+          <div className="px-5 absolute left-0 right-0 bottom-8 border-t border-gray-400/35 pt-8 bg-zarp z-20">
             <Button
               className="h-20 w-full bg-sage hover:bg-sage/90 text-white text-base 2xl:text-lg"
               type="submit"

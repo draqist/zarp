@@ -128,10 +128,7 @@ export default function ValuesMobile() {
   const [active, setActive] = useState<number | null>(1);
 
   return (
-    <div
-      className="bg-abyss min-h-screen pb-4 text-white flex flex-col gap-6 item-center"
-      id="team"
-    >
+    <div className="bg-abyss min-h-screen pb-4 text-white flex flex-col gap-6 item-center lg:hidden">
       <section className="flex lg:hidden px-2 w-full flex-col">
         <div className="flex flex-col gap-4 pt-6 mt-4 px-3 pb-6 border border-white/40 rounded-t-2xl border-b">
           <h1 className="font-machina font-semibold text-3xl">
